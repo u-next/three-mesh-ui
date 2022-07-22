@@ -28,7 +28,7 @@ const ThreeMeshUI = {
 	ContentDirection
 };
 
-if ( typeof global !== 'undefined' ) global.ThreeMeshUI = ThreeMeshUI;
+// if ( typeof global !== 'undefined' ) global.ThreeMeshUI = ThreeMeshUI;
 
 export { Block };
 export { Text };
@@ -42,4 +42,4 @@ export { JustifyContent};
 export { AlignItems };
 export { ContentDirection };
 
-export default ThreeMeshUI;
+// export default ThreeMeshUI;
