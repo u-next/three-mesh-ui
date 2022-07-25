@@ -1,13 +1,14 @@
 {
-  "name": "@takafumi-ko/three-mesh-ui-module",
+  "name": "three-mesh-ui",
   "version": "6.4.4-rollup",
   "description": "a library on top of three.js to help in creating 3D user interfaces",
   "engines": {
     "node": "x.x.x"
   },
+  "files": ["build","src"],
   "main": "build/three-mesh-ui.cjs.js",
   "module": "build/three-mesh-ui.esm.js",
-  "types": "build/three-mesh-ui.d.ts",
+  "types": "src/types/types.d.ts",
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint -c config/codestyle/.eslintrc src examples"
@@ -37,6 +38,7 @@
     "@types/three": "^0.136.1",
     "eslint": "^8.13.0",
     "rollup": "^2.77.0",
-    "tslib": "^2.4.0"
+    "tslib": "^2.4.0",
+    "three": ">=0.132.1"
   }
 }

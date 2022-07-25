@@ -6,17 +6,22 @@ import resolve from '@rollup/plugin-node-resolve';
 //TODO min
 export default {
 	input: 'src/three-mesh-ui.js',
-	output:[{
+	output: [{
 		format: 'esm',
 		file: 'build/three-mesh-ui.esm.js',
 		sourcemap: true,
+	}, {
+		format: 'cjs',
+		file: 'build/three-mesh-ui.cjs.js',
+		sourcemap: true,
+
 	}],
 	plugins: [
 		resolve(),
 		typescript({
 			declaration: true,
 			rootDir: "src",
-			declarationDir:'build'
+			declarationDir: 'build'
 		})
 	]
 }
