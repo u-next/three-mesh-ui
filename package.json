@@ -8,7 +8,7 @@
   "files": ["build","src"],
   "main": "build/three-mesh-ui.cjs.js",
   "module": "build/three-mesh-ui.esm.js",
-  "types": "src/types/types.d.ts",
+  "types": "src/types.d.ts",
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint -c config/codestyle/.eslintrc src examples"
