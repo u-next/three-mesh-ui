@@ -16963,5 +16963,7 @@ const ThreeMeshUI = {
 	ContentDirection
 };
 
+if ( typeof global !== 'undefined' ) global.ThreeMeshUI = ThreeMeshUI;
+
 export { AlignItems, Block, ContentDirection, FontLibrary, InlineBlock, JustifyContent, Keyboard, Text, TextAlign, Whitespace, ThreeMeshUI as default, update };
 //# sourceMappingURL=three-mesh-ui.esm.js.map

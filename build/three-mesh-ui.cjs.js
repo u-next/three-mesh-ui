@@ -16967,6 +16967,8 @@ const ThreeMeshUI = {
 	ContentDirection
 };
 
+if ( typeof global !== 'undefined' ) global.ThreeMeshUI = ThreeMeshUI;
+
 exports.AlignItems = AlignItems;
 exports.Block = Block;
 exports.ContentDirection = ContentDirection;
