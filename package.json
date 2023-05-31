@@ -1,6 +1,6 @@
 {
   "name": "three-mesh-ui",
-  "version": "6.4.4-rollup",
+  "version": "6.5.4-rollup",
   "description": "a library on top of three.js to help in creating 3D user interfaces",
   "engines": {
     "node": "x.x.x"
@@ -39,12 +39,13 @@
     "@rollup/plugin-typescript": "^8.3.3",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@types/three": "^0.136.1",
+    "acorn": "^8.7.0",
     "eslint": "^8.13.0",
     "rollup": "^2.77.0",
     "tslib": "^2.4.0",
     "rollup-plugin-visualizer": "^5.9.0"
   },
   "peerDependencies": {
-    "three": "^0.132.1"
+    "three": ">=0.144.0"
   }
 }

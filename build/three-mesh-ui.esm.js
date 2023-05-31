@@ -1,5 +1,126 @@
-import { FileLoader, TextureLoader, LinearFilter, Color, CanvasTexture, Plane, Vector3, Vector2, ShaderMaterial, Mesh, PlaneGeometry, Object3D, BufferGeometry, BufferAttribute, PlaneBufferGeometry } from 'three';
+import * as __WEBPACK_EXTERNAL_MODULE_three__ from "three";
+/******/ // The require scope
+/******/ var __webpack_require__ = {};
+/******/ 
+/************************************************************************/
+/******/ /* webpack/runtime/define property getters */
+/******/ (() => {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 			}
+/******/ 		}
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ (() => {
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/make namespace object */
+/******/ (() => {
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/ })();
+/******/ 
+/************************************************************************/
+var __webpack_exports__ = {};
 
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "g1": () => (/* reexport */ AlignItems_namespaceObject),
+  "gO": () => (/* reexport */ Block),
+  "km": () => (/* reexport */ ContentDirection_namespaceObject),
+  "zV": () => (/* reexport */ core_FontLibrary),
+  "ol": () => (/* reexport */ InlineBlock),
+  "uM": () => (/* reexport */ JustifyContent_namespaceObject),
+  "N1": () => (/* reexport */ Keyboard),
+  "xv": () => (/* reexport */ Text),
+  "PH": () => (/* reexport */ TextAlign_namespaceObject),
+  "UH": () => (/* reexport */ Whitespace_namespaceObject),
+  "ZP": () => (/* binding */ three_mesh_ui),
+  "Vx": () => (/* binding */ update)
+});
+
+// NAMESPACE OBJECT: ./src/utils/block-layout/ContentDirection.js
+var ContentDirection_namespaceObject = {};
+__webpack_require__.r(ContentDirection_namespaceObject);
+__webpack_require__.d(ContentDirection_namespaceObject, {
+  "COLUMN": () => (COLUMN),
+  "COLUMN_REVERSE": () => (COLUMN_REVERSE),
+  "ROW": () => (ROW),
+  "ROW_REVERSE": () => (ROW_REVERSE),
+  "contentDirection": () => (contentDirection)
+});
+
+// NAMESPACE OBJECT: ./src/utils/block-layout/AlignItems.js
+var AlignItems_namespaceObject = {};
+__webpack_require__.r(AlignItems_namespaceObject);
+__webpack_require__.d(AlignItems_namespaceObject, {
+  "CENTER": () => (CENTER),
+  "END": () => (END),
+  "START": () => (START),
+  "STRETCH": () => (STRETCH),
+  "alignItems": () => (alignItems),
+  "warnAboutDeprecatedAlignItems": () => (warnAboutDeprecatedAlignItems)
+});
+
+// NAMESPACE OBJECT: ./src/utils/block-layout/JustifyContent.js
+var JustifyContent_namespaceObject = {};
+__webpack_require__.r(JustifyContent_namespaceObject);
+__webpack_require__.d(JustifyContent_namespaceObject, {
+  "CENTER": () => (JustifyContent_CENTER),
+  "END": () => (JustifyContent_END),
+  "SPACE_AROUND": () => (SPACE_AROUND),
+  "SPACE_BETWEEN": () => (SPACE_BETWEEN),
+  "SPACE_EVENLY": () => (SPACE_EVENLY),
+  "START": () => (JustifyContent_START),
+  "justifyContent": () => (justifyContent)
+});
+
+// NAMESPACE OBJECT: ./src/utils/inline-layout/Whitespace.js
+var Whitespace_namespaceObject = {};
+__webpack_require__.r(Whitespace_namespaceObject);
+__webpack_require__.d(Whitespace_namespaceObject, {
+  "NORMAL": () => (NORMAL),
+  "NOWRAP": () => (NOWRAP),
+  "PRE": () => (PRE),
+  "PRE_LINE": () => (PRE_LINE),
+  "PRE_WRAP": () => (PRE_WRAP),
+  "WHITE_CHARS": () => (WHITE_CHARS),
+  "collapseWhitespaceOnInlines": () => (collapseWhitespaceOnInlines),
+  "collapseWhitespaceOnString": () => (collapseWhitespaceOnString),
+  "newlineBreakability": () => (newlineBreakability),
+  "shouldBreak": () => (Whitespace_shouldBreak)
+});
+
+// NAMESPACE OBJECT: ./src/utils/inline-layout/TextAlign.js
+var TextAlign_namespaceObject = {};
+__webpack_require__.r(TextAlign_namespaceObject);
+__webpack_require__.d(TextAlign_namespaceObject, {
+  "CENTER": () => (TextAlign_CENTER),
+  "JUSTIFY": () => (JUSTIFY),
+  "JUSTIFY_CENTER": () => (JUSTIFY_CENTER),
+  "JUSTIFY_LEFT": () => (JUSTIFY_LEFT),
+  "JUSTIFY_RIGHT": () => (JUSTIFY_RIGHT),
+  "LEFT": () => (LEFT),
+  "RIGHT": () => (RIGHT),
+  "textAlign": () => (textAlign)
+});
+
+;// CONCATENATED MODULE: external "three"
+var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
+var y = x => () => x
+const external_three_namespaceObject = x({ ["BufferAttribute"]: () => __WEBPACK_EXTERNAL_MODULE_three__.BufferAttribute, ["BufferGeometry"]: () => __WEBPACK_EXTERNAL_MODULE_three__.BufferGeometry, ["CanvasTexture"]: () => __WEBPACK_EXTERNAL_MODULE_three__.CanvasTexture, ["Color"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Color, ["FileLoader"]: () => __WEBPACK_EXTERNAL_MODULE_three__.FileLoader, ["LinearFilter"]: () => __WEBPACK_EXTERNAL_MODULE_three__.LinearFilter, ["Mesh"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Mesh, ["Object3D"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Object3D, ["Plane"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Plane, ["PlaneGeometry"]: () => __WEBPACK_EXTERNAL_MODULE_three__.PlaneGeometry, ["ShaderMaterial"]: () => __WEBPACK_EXTERNAL_MODULE_three__.ShaderMaterial, ["TextureLoader"]: () => __WEBPACK_EXTERNAL_MODULE_three__.TextureLoader, ["Vector2"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Vector2, ["Vector3"]: () => __WEBPACK_EXTERNAL_MODULE_three__.Vector3 });
+;// CONCATENATED MODULE: ./src/utils/block-layout/ContentDirection.js
 const ROW = "row";
 const ROW_REVERSE = "row-reverse";
 const COLUMN = "column";
@@ -45,18 +166,13 @@ function contentDirection( container, DIRECTION, startPos, REVERSE ){
 
 }
 
-var ContentDirection = /*#__PURE__*/Object.freeze({
-	__proto__: null,
-	ROW: ROW,
-	ROW_REVERSE: ROW_REVERSE,
-	COLUMN: COLUMN,
-	COLUMN_REVERSE: COLUMN_REVERSE,
-	contentDirection: contentDirection
-});
+;// CONCATENATED MODULE: ./src/utils/block-layout/AlignItems.js
 
-const START$1 = "start";
-const CENTER$2 = "center";
-const END$1 = "end";
+
+
+const START = "start";
+const CENTER = "center";
+const END = "end";
 const STRETCH = "stretch"; // Still bit experimental
 
 function alignItems( boxComponent, DIRECTION){
@@ -84,14 +200,14 @@ function alignItems( boxComponent, DIRECTION){
 
 		switch ( ALIGNMENT ){
 
-			case END$1:
+			case END:
 			case 'right': // @TODO : Deprecated and will be remove upon 7.x.x
 			case 'bottom': // @TODO : Deprecated and will be remove upon 7.x.x
 				if( DIRECTION.indexOf( ROW ) === 0 ){
 
 					offset = - AXIS_TARGET + ( child[getSizeMethod]() / 2 ) + ( child.margin || 0 );
 
-				}else {
+				}else{
 
 					offset = AXIS_TARGET - ( child[getSizeMethod]() / 2 ) - ( child.margin || 0 );
 
@@ -99,14 +215,14 @@ function alignItems( boxComponent, DIRECTION){
 
 				break;
 
-			case START$1:
+			case START:
 			case 'left': // @TODO : Deprecated and will be remove upon 7.x.x
 			case 'top': // @TODO : Deprecated and will be remove upon 7.x.x
 				if( DIRECTION.indexOf( ROW ) === 0 ){
 
 					offset = AXIS_TARGET - ( child[getSizeMethod]() / 2 ) - ( child.margin || 0 );
 
-				}else {
+				}else{
 
 					offset = - AXIS_TARGET + ( child[getSizeMethod]() / 2 ) + ( child.margin || 0 );
 
@@ -130,16 +246,16 @@ function warnAboutDeprecatedAlignItems( alignment ){
 
 	if( DEPRECATED_ALIGN_ITEMS.indexOf(alignment) !== - 1){
 
-		console.warn(`alignItems === '${alignment}' is deprecated and will be remove in 7.x.x. Fallback are 'start'|'end'`);
+		console.warn(`alignItems === '${alignment}' is deprecated and will be remove in 7.x.x. Fallback are 'start'|'end'`)
 
 	}
 
 }
 
 const AVAILABLE_ALIGN_ITEMS = [
-	START$1,
-	CENTER$2,
-	END$1,
+	START,
+	CENTER,
+	END,
 	STRETCH,
 	'top', // @TODO: Be remove upon 7.x.x
 	'right', // @TODO: Be remove upon 7.x.x
@@ -155,19 +271,11 @@ const DEPRECATED_ALIGN_ITEMS = [
 	'left'
 ];
 
-var AlignItems = /*#__PURE__*/Object.freeze({
-	__proto__: null,
-	START: START$1,
-	CENTER: CENTER$2,
-	END: END$1,
-	STRETCH: STRETCH,
-	alignItems: alignItems,
-	warnAboutDeprecatedAlignItems: warnAboutDeprecatedAlignItems
-});
 
-const START = "start";
-const CENTER$1 = "center";
-const END = "end";
+;// CONCATENATED MODULE: ./src/utils/block-layout/JustifyContent.js
+const JustifyContent_START = "start";
+const JustifyContent_CENTER = "center";
+const JustifyContent_END = "end";
 const SPACE_AROUND = 'space-around';
 const SPACE_BETWEEN = 'space-between';
 const SPACE_EVENLY = 'space-evenly';
@@ -181,7 +289,7 @@ function justifyContent( boxComponent, direction, startPos, REVERSE){
 
 	}
 
-	const side = direction.indexOf('row') === 0 ? 'width' : 'height';
+	const side = direction.indexOf('row') === 0 ? 'width' : 'height'
 	const usedDirectionSpace = boxComponent.getChildrenSideSum( side );
 
 	const INNER_SIZE = side === 'width' ? boxComponent.getInnerWidth() : boxComponent.getInnerHeight();
@@ -196,7 +304,7 @@ function justifyContent( boxComponent, direction, startPos, REVERSE){
 	const justificationMargins = _getJustificationMargin( boxComponent.childrenBoxes, remainingSpace, JUSTIFICATION, REVERSE );
 
 	// Apply
-	const axis = direction.indexOf( 'row' ) === 0 ? "x" : "y";
+	const axis = direction.indexOf( 'row' ) === 0 ? "x" : "y"
 	boxComponent.childrenBoxes.forEach( ( child , childIndex ) => {
 
 		boxComponent.childrenPos[ child.id ][axis] -= justificationOffset - justificationMargins[childIndex];
@@ -205,9 +313,9 @@ function justifyContent( boxComponent, direction, startPos, REVERSE){
 }
 
 const AVAILABLE_JUSTIFICATIONS = [
-	START,
-	CENTER$1,
-	END,
+	JustifyContent_START,
+	JustifyContent_CENTER,
+	JustifyContent_END,
 	SPACE_AROUND,
 	SPACE_BETWEEN,
 	SPACE_EVENLY
@@ -224,10 +332,10 @@ function _getJustificationOffset( justification, axisOffset ){
 	// Only end and center have justification offset
 	switch ( justification ){
 
-		case END:
+		case JustifyContent_END:
 			return axisOffset;
 
-		case CENTER$1:
+		case JustifyContent_CENTER:
 			return axisOffset / 2;
 	}
 
@@ -316,17 +424,7 @@ function _getJustificationMargin( items, spaceToDistribute, justification, rever
 
 }
 
-var JustifyContent = /*#__PURE__*/Object.freeze({
-	__proto__: null,
-	START: START,
-	CENTER: CENTER$1,
-	END: END,
-	SPACE_AROUND: SPACE_AROUND,
-	SPACE_BETWEEN: SPACE_BETWEEN,
-	SPACE_EVENLY: SPACE_EVENLY,
-	justifyContent: justifyContent
-});
-
+;// CONCATENATED MODULE: ./src/components/core/BoxComponent.js
 /**
 
 Job: Handle everything related to a BoxComponent element dimensioning and positioning
@@ -338,6 +436,10 @@ its children position. A Block can only have either only box components (Block)
 as children, or only inline components (Text, InlineBlock).
 
  */
+
+
+
+
 
 function BoxComponent( Base ) {
 
@@ -534,6 +636,8 @@ function BoxComponent( Base ) {
 
 }
 
+
+;// CONCATENATED MODULE: ./src/utils/inline-layout/Whitespace.js
 /**
  * @see https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace#whitespace_helper_functions
  *
@@ -576,6 +680,8 @@ const collapseWhitespaceOnString = function ( textContent, whiteSpace ) {
 			textContent = textContent.replace( /[ ]{2,}/g, ' ' );
 			break;
 
+		default:
+
 	}
 
 	return textContent;
@@ -596,6 +702,10 @@ const newlineBreakability = function ( whiteSpace ) {
 		case PRE_WRAP:
 		case PRE_LINE:
 			return 'mandatory';
+
+		case NOWRAP:
+		case NORMAL:
+		default:
 		// do not automatically break on newline
 
 	}
@@ -611,7 +721,7 @@ const newlineBreakability = function ( whiteSpace ) {
  * @param options
  * @returns {boolean}
  */
-const shouldBreak = function( inlines, i, lastInlineOffset, options){
+const Whitespace_shouldBreak = function( inlines, i, lastInlineOffset, options){
 	const inline = inlines[i];
 
 	switch ( options.WHITESPACE ){
@@ -642,7 +752,7 @@ const shouldBreak = function( inlines, i, lastInlineOffset, options){
 		default:
 			return false;
 	}
-};
+}
 
 
 /**
@@ -839,23 +949,10 @@ function _shouldFriendlyBreak( prevChar, lastInlineOffset, nextBreak, options ) 
 
 }
 
-var Whitespace = /*#__PURE__*/Object.freeze({
-	__proto__: null,
-	WHITE_CHARS: WHITE_CHARS,
-	NORMAL: NORMAL,
-	NOWRAP: NOWRAP,
-	PRE: PRE,
-	PRE_LINE: PRE_LINE,
-	PRE_WRAP: PRE_WRAP,
-	collapseWhitespaceOnString: collapseWhitespaceOnString,
-	newlineBreakability: newlineBreakability,
-	shouldBreak: shouldBreak,
-	collapseWhitespaceOnInlines: collapseWhitespaceOnInlines
-});
-
+;// CONCATENATED MODULE: ./src/utils/inline-layout/TextAlign.js
 const LEFT = 'left';
 const RIGHT = 'right';
-const CENTER = 'center';
+const TextAlign_CENTER = 'center';
 const JUSTIFY = 'justify';
 const JUSTIFY_LEFT = 'justify-left';
 const JUSTIFY_RIGHT = 'justify-right';
@@ -877,6 +974,8 @@ function textAlign( lines, ALIGNMENT, INNER_WIDTH ) {
 			line[ j ].offsetX += offsetX;
 
 		}
+
+		line.x = offsetX;
 
 	}
 
@@ -956,7 +1055,7 @@ const _computeLineOffset = ( line, ALIGNMENT, INNER_WIDTH, lastLine ) => {
 			return -line.width + ( INNER_WIDTH / 2 );
 
 
-		case CENTER:
+		case TextAlign_CENTER:
 			return -line.width / 2;
 
 		case JUSTIFY_CENTER:
@@ -977,18 +1076,7 @@ const _computeLineOffset = ( line, ALIGNMENT, INNER_WIDTH, lastLine ) => {
 
 };
 
-var TextAlign = /*#__PURE__*/Object.freeze({
-	__proto__: null,
-	LEFT: LEFT,
-	RIGHT: RIGHT,
-	CENTER: CENTER,
-	JUSTIFY: JUSTIFY,
-	JUSTIFY_LEFT: JUSTIFY_LEFT,
-	JUSTIFY_RIGHT: JUSTIFY_RIGHT,
-	JUSTIFY_CENTER: JUSTIFY_CENTER,
-	textAlign: textAlign
-});
-
+;// CONCATENATED MODULE: ./src/components/core/InlineManager.js
 /**
 
 Job: Positioning inline elements according to their dimensions inside this component
@@ -1004,6 +1092,8 @@ in order to create a line break when necessary. It's Text that merge the various
 in its own updateLayout function.
 
  */
+
+
 
 function InlineManager( Base ) {
 
@@ -1024,30 +1114,13 @@ function InlineManager( Base ) {
 
 			// Compute lines
 			const lines = this.computeLines();
+			lines.interLine = INTERLINE;
 
 			/////////////////////////////////////////////////////////////////
 			// Position lines according to justifyContent and contentAlign
 			/////////////////////////////////////////////////////////////////
 
-			// individual vertical offset
-
-			let textHeight = lines.reduce( ( offsetY, line, i, arr ) => {
-
-				const charAlignement = line.lineHeight - line.lineBase;
-
-				line.forEach( ( inline ) => {
-
-					inline.offsetY = offsetY - line.lineHeight + charAlignement + arr[ 0 ].lineHeight;
-
-				} );
-
-				return offsetY - line.lineHeight - INTERLINE;
-
-			}, 0 ) + INTERLINE;
-
-			//
-
-			textHeight = Math.abs( textHeight );
+			const textHeight = Math.abs( lines.height );
 
 			// Line vertical positioning
 
@@ -1055,22 +1128,26 @@ function InlineManager( Base ) {
 				switch ( JUSTIFICATION ) {
 
 					case 'start':
-						return ( INNER_HEIGHT / 2 ) - lines[ 0 ].lineHeight;
+						return (INNER_HEIGHT/2);
+
 					case 'end':
-						return textHeight - lines[ 0 ].lineHeight - ( INNER_HEIGHT / 2 ) + ( lines[ lines.length - 1 ].lineHeight - lines[ lines.length - 1 ].lineHeight );
+						return textHeight - ( INNER_HEIGHT / 2 );
+
 					case 'center':
-						return ( textHeight / 2 ) - lines[ 0 ].lineHeight;
+						return ( textHeight / 2 );
+
 					default:
 						console.warn( `justifyContent: '${JUSTIFICATION}' is not valid` );
 
 				}
 			} )();
 
-			// const justificationOffset = 0;
 
 			//
 
 			lines.forEach( ( line ) => {
+
+				line.y += justificationOffset;
 
 				line.forEach( ( inline ) => {
 
@@ -1260,6 +1337,9 @@ function InlineManager( Base ) {
 			// Will stock the characters of each line, so that we can
 			// correct lines position before to merge
 			const lines = [ [] ];
+			lines.height = 0;
+
+			const INTERLINE = this.getInterLine();
 
 			this.childrenInlines.reduce( ( lastInlineOffset, inlineComponent ) => {
 
@@ -1281,7 +1361,7 @@ function InlineManager( Base ) {
 						LETTERSPACING,
 						BREAKON,
 						INNER_WIDTH
-					};
+					}
 
 					const currentInlineInfo = inlineComponent.inlines.reduce( ( lastInlineOffset, inline, i, inlines ) => {
 
@@ -1290,9 +1370,9 @@ function InlineManager( Base ) {
 						const xadvance = inline.xadvance ? inline.xadvance : inline.width;
 
 						// Line break
-						const shouldBreak$1 = shouldBreak(inlines,i,lastInlineOffset, whiteSpaceOptions );
+						const shouldBreak = Whitespace_shouldBreak(inlines,i,lastInlineOffset, whiteSpaceOptions );
 
-						if ( shouldBreak$1 ) {
+						if ( shouldBreak ) {
 
 							lines.push( [ inline ] );
 
@@ -1324,6 +1404,7 @@ function InlineManager( Base ) {
 
 			// Compute lines dimensions
 
+			let width = 0, height =0, lineOffsetY = -INTERLINE/2;
 			lines.forEach( ( line ) => {
 
 				//
@@ -1349,6 +1430,7 @@ function InlineManager( Base ) {
 				//
 
 				line.width = 0;
+				line.height = line.lineHeight;
 				const lineHasInlines = line[ 0 ];
 
 				if ( lineHasInlines ) {
@@ -1366,10 +1448,34 @@ function InlineManager( Base ) {
 
 					// compute its width: length from firstInline:LEFT to lastInline:RIGHT
 					line.width = this.computeLineWidth( line );
+					if( line.width > width ){
+						width = line.width;
+					}
+
+					line.forEach( ( inline ) => {
+
+						inline.offsetY = (lineOffsetY - inline.height) - inline.anchor;
+
+						if( inline.lineHeight < line.lineHeight ){
+							inline.offsetY -= line.lineBase- inline.lineBase;
+						}
+
+					} );
+
+					line.y = lineOffsetY;
+					// line.x will be set by textAlign
+
+					height += ( line.lineHeight + INTERLINE );
+
+					lineOffsetY = lineOffsetY - (line.lineHeight + INTERLINE );
 
 				}
 
 			} );
+
+			lines.height = height;
+			lines.width = width;
+
 
 			return lines;
 		}
@@ -1387,16 +1493,7 @@ function InlineManager( Base ) {
 			} );
 
 			const lines = this.computeLines();
-
-			const INTERLINE = this.getInterLine();
-
-			const textHeight = lines.reduce( ( offsetY, line ) => {
-
-				return offsetY - line.lineHeight - INTERLINE;
-
-			}, 0 ) + INTERLINE;
-
-			return Math.abs( textHeight );
+			return Math.abs( lines.height );
 		}
 
 		/**
@@ -1420,6 +1517,7 @@ function InlineManager( Base ) {
 
 }
 
+;// CONCATENATED MODULE: ./src/components/core/FontLibrary.js
 /*
 
 Job:
@@ -1436,11 +1534,13 @@ loading it twice, even if the two component are not in the same parent/child hie
 
 */
 
-const fileLoader = new FileLoader();
+
+
+const fileLoader = new external_three_namespaceObject.FileLoader();
 const requiredFontFamilies = [];
 const fontFamilies = {};
 
-const textureLoader$1 = new TextureLoader();
+const textureLoader = new external_three_namespaceObject.TextureLoader();
 const requiredFontTextures = [];
 const fontTextures = {};
 
@@ -1489,11 +1589,11 @@ function setFontTexture( component, url ) {
 
 		requiredFontTextures.push( url );
 
-		textureLoader$1.load( url, ( texture ) => {
+		textureLoader.load( url, ( texture ) => {
 
 			texture.generateMipmaps = false;
-			texture.minFilter = LinearFilter;
-			texture.magFilter = LinearFilter;
+			texture.minFilter = external_three_namespaceObject.LinearFilter;
+			texture.magFilter = external_three_namespaceObject.LinearFilter;
 
 			fontTextures[ url ] = texture;
 
@@ -1633,8 +1733,8 @@ font with specified name will be overwritten, but components using it won't be u
 function addFont( name, json, texture ) {
 
 	texture.generateMipmaps = false;
-	texture.minFilter = LinearFilter;
-	texture.magFilter = LinearFilter;
+	texture.minFilter = external_three_namespaceObject.LinearFilter;
+	texture.magFilter = external_three_namespaceObject.LinearFilter;
 
 	requiredFontFamilies.push( name );
 	fontFamilies[ name ] = json;
@@ -1657,6 +1757,9 @@ const FontLibrary = {
 	addFont
 };
 
+/* harmony default export */ const core_FontLibrary = (FontLibrary);
+
+;// CONCATENATED MODULE: ./src/components/core/UpdateManager.js
 /**
  * Job:
  * - recording components required updates
@@ -1829,8 +1932,18 @@ class UpdateManager {
 UpdateManager.components = [];
 UpdateManager.requestedUpdates = {};
 
+;// CONCATENATED MODULE: ./src/utils/Defaults.js
+
+
+
+
+
+
+
+
+
 /** List the default values of the lib components */
-var Defaults = {
+/* harmony default export */ const Defaults = ({
 	container: null,
 	fontFamily: null,
 	fontSize: 0.05,
@@ -1841,50 +1954,60 @@ var Defaults = {
 	breakOn: '- ,.:?!\n',// added '\n' to also acts as friendly breaks when white-space:normal
 	whiteSpace: PRE_LINE,
 	contentDirection: COLUMN,
-	alignItems: CENTER$2,
-	justifyContent: START,
-	fontTexture: null,
-	textAlign: CENTER,
+	alignItems: CENTER,
+	justifyContent: JustifyContent_START,
+	textAlign: TextAlign_CENTER,
 	textType: 'MSDF',
-	fontColor: new Color( 0xffffff ),
+	fontColor: new external_three_namespaceObject.Color( 0xffffff ),
 	fontOpacity: 1,
 	fontPXRange: 4,
 	fontSupersampling: true,
 	borderRadius: 0.01,
 	borderWidth: 0,
-	borderColor: new Color( 'black' ),
+	borderColor: new external_three_namespaceObject.Color( 'black' ),
 	borderOpacity: 1,
 	backgroundSize: "cover",
-	backgroundColor: new Color( 0x222222 ),
-	backgroundWhiteColor: new Color( 0xffffff ),
+	backgroundColor: new external_three_namespaceObject.Color( 0x222222 ),
+	backgroundWhiteColor: new external_three_namespaceObject.Color( 0xffffff ),
 	backgroundOpacity: 0.8,
 	backgroundOpaqueOpacity: 1.0,
 	// this default value is a function to avoid initialization issues (see issue #126)
-	backgroundTexture: makeBackgroundTexture,
+	getDefaultTexture,
 	hiddenOverflow: false,
 	letterSpacing: 0
-};
+});
 
 //
-let defaultBgTexture;
 
-function makeBackgroundTexture() {
+let defaultTexture;
 
-	if ( !defaultBgTexture ) {
+function getDefaultTexture() {
+
+	if ( !defaultTexture ) {
 
 		const ctx = document.createElement( 'canvas' ).getContext( '2d' );
 		ctx.canvas.width = 1;
 		ctx.canvas.height = 1;
 		ctx.fillStyle = '#ffffff';
 		ctx.fillRect( 0, 0, 1, 1 );
-		defaultBgTexture = new CanvasTexture( ctx.canvas );
-		defaultBgTexture.isDefault = true;
+		defaultTexture = new external_three_namespaceObject.CanvasTexture( ctx.canvas );
+		defaultTexture.isDefault = true;
 
 	}
 
-	return defaultBgTexture;
+	return defaultTexture;
 
 }
+
+;// CONCATENATED MODULE: ./src/components/core/MeshUIComponent.js
+
+
+
+
+
+
+
+
 
 /**
 
@@ -1939,10 +2062,10 @@ function MeshUIComponent( Base ) {
 					const xLimit = ( this.parentUI.getWidth() / 2 ) - ( this.parentUI.padding || 0 );
 
 					const newPlanes = [
-						new Plane( new Vector3( 0, 1, 0 ), yLimit ),
-						new Plane( new Vector3( 0, -1, 0 ), yLimit ),
-						new Plane( new Vector3( 1, 0, 0 ), xLimit ),
-						new Plane( new Vector3( -1, 0, 0 ), xLimit )
+						new external_three_namespaceObject.Plane( new external_three_namespaceObject.Vector3( 0, 1, 0 ), yLimit ),
+						new external_three_namespaceObject.Plane( new external_three_namespaceObject.Vector3( 0, -1, 0 ), yLimit ),
+						new external_three_namespaceObject.Plane( new external_three_namespaceObject.Vector3( 1, 0, 0 ), xLimit ),
+						new external_three_namespaceObject.Plane( new external_three_namespaceObject.Vector3( -1, 0, 0 ), xLimit )
 					];
 
 					newPlanes.forEach( plane => {
@@ -2023,7 +2146,17 @@ function MeshUIComponent( Base ) {
 
 		getFontTexture() {
 
-			return this._getProperty( 'fontTexture' );
+			if ( this[ 'fontTexture' ] === undefined && this.parentUI ) {
+
+				return this.parent._getProperty( 'fontTexture' );
+
+			} else if ( this[ 'fontTexture' ] !== undefined ) {
+
+				return this[ 'fontTexture' ];
+
+			}
+
+			return Defaults.getDefaultTexture();
 
 		}
 
@@ -2160,7 +2293,7 @@ function MeshUIComponent( Base ) {
 
 		getBackgroundTexture() {
 
-			return this.backgroundTexture || Defaults.backgroundTexture();
+			return this.backgroundTexture || Defaults.getDefaultTexture();
 
 		}
 
@@ -2375,7 +2508,7 @@ function MeshUIComponent( Base ) {
 
 				}
 
-				console.warn("`alignContent` property has been deprecated, please rely on `alignItems` and `textAlign` instead.");
+				console.warn("`alignContent` property has been deprecated, please rely on `alignItems` and `textAlign` instead.")
 
 				delete options["alignContent"];
 
@@ -2474,13 +2607,13 @@ function MeshUIComponent( Base ) {
 
 			if ( options.fontFamily ) {
 
-				FontLibrary.setFontFamily( this, options.fontFamily );
+				core_FontLibrary.setFontFamily( this, options.fontFamily );
 
 			}
 
 			if ( options.fontTexture ) {
 
-				FontLibrary.setFontTexture( this, options.fontTexture );
+				core_FontLibrary.setFontTexture( this, options.fontTexture );
 
 			}
 
@@ -2548,7 +2681,12 @@ function MeshUIComponent( Base ) {
 
 }
 
+;// CONCATENATED MODULE: ./src/components/core/MaterialManager.js
 /* eslint-disable camelcase */
+//@TODO: Get rid of non camelcase uniforms
+
+
+
 
 /**
 
@@ -2571,27 +2709,27 @@ function MaterialManager( Base ) {
 			super( options );
 
 			this.textUniforms = {
-				u_texture: { value: null },
-				u_color: { value: null },
-				u_opacity: { value: null },
-				u_pxRange: { value: null },
-				u_useRGSS: { value: null },
+				u_texture: { value: this.getFontTexture() },
+				u_color: { value: this.getFontColor() },
+				u_opacity: { value: this.getFontOpacity() },
+				u_pxRange: { value: this.getFontPXRange() },
+				u_useRGSS: { value: this.getFontSupersampling() },
 			};
 
 			this.backgroundUniforms = {
-				u_texture: { value: null },
-				u_color: { value: null },
-				u_opacity: { value: null },
-				u_backgroundMapping: { value: null },
-				u_borderWidth: { value: null },
-				u_borderColor: { value: null },
-				u_borderRadiusTopLeft: { value: null },
-				u_borderRadiusTopRight: { value: null },
-				u_borderRadiusBottomRight: { value: null },
-				u_borderRadiusBottomLeft: { value: null },
-				u_borderOpacity: { value: null },
-				u_size: { value: new Vector2( 1, 1 ) },
-				u_tSize: { value: new Vector2( 1, 1 ) }
+				u_texture: { value: this.getBackgroundTexture() },
+				u_color: { value: this.getBackgroundColor() },
+				u_opacity: { value: this.getBackgroundOpacity() },
+				u_backgroundMapping: { value: this.getBackgroundSize() },
+				u_borderWidth: { value: this.getBorderWidth() },
+				u_borderColor: { value: this.getBorderColor() },
+				u_borderRadiusTopLeft: { value: this.getBorderRadius() },
+				u_borderRadiusTopRight: { value: this.getBorderRadius() },
+				u_borderRadiusBottomRight: { value: this.getBorderRadius() },
+				u_borderRadiusBottomLeft: { value: this.getBorderRadius() },
+				u_borderOpacity: { value: this.getBorderOpacity() },
+				u_size: { value: new external_three_namespaceObject.Vector2( 1, 1 ) },
+				u_tSize: { value: new external_three_namespaceObject.Vector2( 1, 1 ) }
 			};
 
 		}
@@ -2710,7 +2848,7 @@ function MaterialManager( Base ) {
 		/** @private */
 		_makeTextMaterial() {
 
-			return new ShaderMaterial( {
+			return new external_three_namespaceObject.ShaderMaterial( {
 				uniforms: this.textUniforms,
 				transparent: true,
 				clipping: true,
@@ -2726,7 +2864,7 @@ function MaterialManager( Base ) {
 		/** @private */
 		_makeBackgroundMaterial() {
 
-			return new ShaderMaterial( {
+			return new external_three_namespaceObject.ShaderMaterial( {
 				uniforms: this.backgroundUniforms,
 				transparent: true,
 				clipping: true,
@@ -2991,14 +3129,18 @@ void main() {
 }
 `;
 
+;// CONCATENATED MODULE: ./src/content/Frame.js
+
+
+
 /**
  * Returns a basic plane mesh.
  */
-class Frame extends Mesh {
+class Frame extends external_three_namespaceObject.Mesh {
 
 	constructor( material ) {
 
-		const geometry = new PlaneGeometry();
+		const geometry = new external_three_namespaceObject.PlaneGeometry();
 
 		super( geometry, material );
 
@@ -3011,6 +3153,7 @@ class Frame extends Mesh {
 
 }
 
+;// CONCATENATED MODULE: ./src/utils/mix.js
 let _Base = null;
 
 /**
@@ -3051,6 +3194,17 @@ mix.withBase = ( Base ) => {
 
 };
 
+;// CONCATENATED MODULE: ./src/components/Block.js
+
+
+
+
+
+
+
+
+
+
 /**
 
 Job:
@@ -3060,7 +3214,7 @@ Job:
 - Call creation and update functions of its background planes
 
  */
-class Block extends mix.withBase( Object3D )(
+class Block extends mix.withBase( external_three_namespaceObject.Object3D )(
 	BoxComponent,
 	InlineManager,
 	MaterialManager,
@@ -3075,7 +3229,7 @@ class Block extends mix.withBase( Object3D )(
 
 		//
 
-		this.size = new Vector2( 1, 1 );
+		this.size = new external_three_namespaceObject.Vector2( 1, 1 );
 
 		this.frame = new Frame( this.getBackgroundMaterial() );
 
@@ -3192,6 +3346,7 @@ class Block extends mix.withBase( Object3D )(
 
 }
 
+;// CONCATENATED MODULE: ./src/components/core/InlineComponent.js
 /**
 
 Job: nothing yet, but adding a isInline parameter to an inline component
@@ -3214,6 +3369,104 @@ function InlineComponent( Base ) {
 	};
 }
 
+;// CONCATENATED MODULE: ./node_modules/three/examples/jsm/utils/BufferGeometryUtils.js
+
+
+function computeTangents() {
+
+	throw new Error( 'BufferGeometryUtils: computeTangents renamed to computeMikkTSpaceTangents.' );
+
+}
+
+function computeMikkTSpaceTangents( geometry, MikkTSpace, negateSign = true ) {
+
+	if ( ! MikkTSpace || ! MikkTSpace.isReady ) {
+
+		throw new Error( 'BufferGeometryUtils: Initialized MikkTSpace library required.' );
+
+	}
+
+	if ( ! geometry.hasAttribute( 'position' ) || ! geometry.hasAttribute( 'normal' ) || ! geometry.hasAttribute( 'uv' ) ) {
+
+		throw new Error( 'BufferGeometryUtils: Tangents require "position", "normal", and "uv" attributes.' );
+
+	}
+
+	function getAttributeArray( attribute ) {
+
+		if ( attribute.normalized || attribute.isInterleavedBufferAttribute ) {
+
+			const srcArray = attribute.isInterleavedBufferAttribute ? attribute.data.array : attribute.array;
+			const dstArray = new Float32Array( attribute.getCount() * attribute.itemSize );
+
+			for ( let i = 0, j = 0; i < attribute.getCount(); i ++ ) {
+
+				dstArray[ j ++ ] = MathUtils.denormalize( attribute.getX( i ), srcArray );
+				dstArray[ j ++ ] = MathUtils.denormalize( attribute.getY( i ), srcArray );
+
+				if ( attribute.itemSize > 2 ) {
+
+					dstArray[ j ++ ] = MathUtils.denormalize( attribute.getZ( i ), srcArray );
+
+				}
+
+			}
+
+			return dstArray;
+
+		}
+
+		if ( attribute.array instanceof Float32Array ) {
+
+			return attribute.array;
+
+		}
+
+		return new Float32Array( attribute.array );
+
+	}
+
+	// MikkTSpace algorithm requires non-indexed input.
+
+	const _geometry = geometry.index ? geometry.toNonIndexed() : geometry;
+
+	// Compute vertex tangents.
+
+	const tangents = MikkTSpace.generateTangents(
+
+		getAttributeArray( _geometry.attributes.position ),
+		getAttributeArray( _geometry.attributes.normal ),
+		getAttributeArray( _geometry.attributes.uv )
+
+	);
+
+	// Texture coordinate convention of glTF differs from the apparent
+	// default of the MikkTSpace library; .w component must be flipped.
+
+	if ( negateSign ) {
+
+		for ( let i = 3; i < tangents.length; i += 4 ) {
+
+			tangents[ i ] *= - 1;
+
+		}
+
+	}
+
+	//
+
+	_geometry.setAttribute( 'tangent', new BufferAttribute( tangents, 4 ) );
+
+	if ( geometry !== _geometry ) {
+
+		geometry.copy( _geometry );
+
+	}
+
+	return geometry;
+
+}
+
 /**
  * @param  {Array<BufferGeometry>} geometries
  * @param  {Boolean} useGroups
@@ -3231,7 +3484,7 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 	const morphTargetsRelative = geometries[ 0 ].morphTargetsRelative;
 
-	const mergedGeometry = new BufferGeometry();
+	const mergedGeometry = new external_three_namespaceObject.BufferGeometry();
 
 	let offset = 0;
 
@@ -3476,23 +3729,856 @@ function mergeBufferAttributes( attributes ) {
 
 	}
 
-	return new BufferAttribute( array, itemSize, normalized );
+	return new external_three_namespaceObject.BufferAttribute( array, itemSize, normalized );
 
 }
+
+/**
+ * @param {Array<BufferAttribute>} attributes
+ * @return {Array<InterleavedBufferAttribute>}
+ */
+function interleaveAttributes( attributes ) {
+
+	// Interleaves the provided attributes into an InterleavedBuffer and returns
+	// a set of InterleavedBufferAttributes for each attribute
+	let TypedArray;
+	let arrayLength = 0;
+	let stride = 0;
+
+	// calculate the the length and type of the interleavedBuffer
+	for ( let i = 0, l = attributes.length; i < l; ++ i ) {
+
+		const attribute = attributes[ i ];
+
+		if ( TypedArray === undefined ) TypedArray = attribute.array.constructor;
+		if ( TypedArray !== attribute.array.constructor ) {
+
+			console.error( 'AttributeBuffers of different types cannot be interleaved' );
+			return null;
+
+		}
+
+		arrayLength += attribute.array.length;
+		stride += attribute.itemSize;
+
+	}
+
+	// Create the set of buffer attributes
+	const interleavedBuffer = new InterleavedBuffer( new TypedArray( arrayLength ), stride );
+	let offset = 0;
+	const res = [];
+	const getters = [ 'getX', 'getY', 'getZ', 'getW' ];
+	const setters = [ 'setX', 'setY', 'setZ', 'setW' ];
+
+	for ( let j = 0, l = attributes.length; j < l; j ++ ) {
+
+		const attribute = attributes[ j ];
+		const itemSize = attribute.itemSize;
+		const count = attribute.count;
+		const iba = new InterleavedBufferAttribute( interleavedBuffer, itemSize, offset, attribute.normalized );
+		res.push( iba );
+
+		offset += itemSize;
+
+		// Move the data for each attribute into the new interleavedBuffer
+		// at the appropriate offset
+		for ( let c = 0; c < count; c ++ ) {
+
+			for ( let k = 0; k < itemSize; k ++ ) {
+
+				iba[ setters[ k ] ]( c, attribute[ getters[ k ] ]( c ) );
+
+			}
+
+		}
+
+	}
+
+	return res;
+
+}
+
+// returns a new, non-interleaved version of the provided attribute
+function deinterleaveAttribute( attribute ) {
+
+	const cons = attribute.data.array.constructor;
+	const count = attribute.count;
+	const itemSize = attribute.itemSize;
+	const normalized = attribute.normalized;
+
+	const array = new cons( count * itemSize );
+	let newAttribute;
+	if ( attribute.isInstancedInterleavedBufferAttribute ) {
+
+		newAttribute = new InstancedBufferAttribute( array, itemSize, normalized, attribute.meshPerAttribute );
+
+	} else {
+
+		newAttribute = new BufferAttribute( array, itemSize, normalized );
+
+	}
+
+	for ( let i = 0; i < count; i ++ ) {
+
+		newAttribute.setX( i, attribute.getX( i ) );
+
+		if ( itemSize >= 2 ) {
+
+			newAttribute.setY( i, attribute.getY( i ) );
+
+		}
+
+		if ( itemSize >= 3 ) {
+
+			newAttribute.setZ( i, attribute.getZ( i ) );
+
+		}
+
+		if ( itemSize >= 4 ) {
+
+			newAttribute.setW( i, attribute.getW( i ) );
+
+		}
+
+	}
+
+	return newAttribute;
+
+}
+
+// deinterleaves all attributes on the geometry
+function deinterleaveGeometry( geometry ) {
+
+	const attributes = geometry.attributes;
+	const morphTargets = geometry.morphTargets;
+	const attrMap = new Map();
+
+	for ( const key in attributes ) {
+
+		const attr = attributes[ key ];
+		if ( attr.isInterleavedBufferAttribute ) {
+
+			if ( ! attrMap.has( attr ) ) {
+
+				attrMap.set( attr, deinterleaveAttribute( attr ) );
+
+			}
+
+			attributes[ key ] = attrMap.get( attr );
+
+		}
+
+	}
+
+	for ( const key in morphTargets ) {
+
+		const attr = morphTargets[ key ];
+		if ( attr.isInterleavedBufferAttribute ) {
+
+			if ( ! attrMap.has( attr ) ) {
+
+				attrMap.set( attr, deinterleaveAttribute( attr ) );
+
+			}
+
+			morphTargets[ key ] = attrMap.get( attr );
+
+		}
+
+	}
+
+}
+
+/**
+ * @param {Array<BufferGeometry>} geometry
+ * @return {number}
+ */
+function estimateBytesUsed( geometry ) {
+
+	// Return the estimated memory used by this geometry in bytes
+	// Calculate using itemSize, count, and BYTES_PER_ELEMENT to account
+	// for InterleavedBufferAttributes.
+	let mem = 0;
+	for ( const name in geometry.attributes ) {
+
+		const attr = geometry.getAttribute( name );
+		mem += attr.count * attr.itemSize * attr.array.BYTES_PER_ELEMENT;
+
+	}
+
+	const indices = geometry.getIndex();
+	mem += indices ? indices.count * indices.itemSize * indices.array.BYTES_PER_ELEMENT : 0;
+	return mem;
+
+}
+
+/**
+ * @param {BufferGeometry} geometry
+ * @param {number} tolerance
+ * @return {BufferGeometry>}
+ */
+function mergeVertices( geometry, tolerance = 1e-4 ) {
+
+	tolerance = Math.max( tolerance, Number.EPSILON );
+
+	// Generate an index buffer if the geometry doesn't have one, or optimize it
+	// if it's already available.
+	const hashToIndex = {};
+	const indices = geometry.getIndex();
+	const positions = geometry.getAttribute( 'position' );
+	const vertexCount = indices ? indices.count : positions.count;
+
+	// next value for triangle indices
+	let nextIndex = 0;
+
+	// attributes and new attribute arrays
+	const attributeNames = Object.keys( geometry.attributes );
+	const attrArrays = {};
+	const morphAttrsArrays = {};
+	const newIndices = [];
+	const getters = [ 'getX', 'getY', 'getZ', 'getW' ];
+
+	// initialize the arrays
+	for ( let i = 0, l = attributeNames.length; i < l; i ++ ) {
+
+		const name = attributeNames[ i ];
+
+		attrArrays[ name ] = [];
+
+		const morphAttr = geometry.morphAttributes[ name ];
+		if ( morphAttr ) {
+
+			morphAttrsArrays[ name ] = new Array( morphAttr.length ).fill().map( () => [] );
+
+		}
+
+	}
+
+	// convert the error tolerance to an amount of decimal places to truncate to
+	const decimalShift = Math.log10( 1 / tolerance );
+	const shiftMultiplier = Math.pow( 10, decimalShift );
+	for ( let i = 0; i < vertexCount; i ++ ) {
+
+		const index = indices ? indices.getX( i ) : i;
+
+		// Generate a hash for the vertex attributes at the current index 'i'
+		let hash = '';
+		for ( let j = 0, l = attributeNames.length; j < l; j ++ ) {
+
+			const name = attributeNames[ j ];
+			const attribute = geometry.getAttribute( name );
+			const itemSize = attribute.itemSize;
+
+			for ( let k = 0; k < itemSize; k ++ ) {
+
+				// double tilde truncates the decimal value
+				hash += `${ ~ ~ ( attribute[ getters[ k ] ]( index ) * shiftMultiplier ) },`;
+
+			}
+
+		}
+
+		// Add another reference to the vertex if it's already
+		// used by another index
+		if ( hash in hashToIndex ) {
+
+			newIndices.push( hashToIndex[ hash ] );
+
+		} else {
+
+			// copy data to the new index in the attribute arrays
+			for ( let j = 0, l = attributeNames.length; j < l; j ++ ) {
+
+				const name = attributeNames[ j ];
+				const attribute = geometry.getAttribute( name );
+				const morphAttr = geometry.morphAttributes[ name ];
+				const itemSize = attribute.itemSize;
+				const newarray = attrArrays[ name ];
+				const newMorphArrays = morphAttrsArrays[ name ];
+
+				for ( let k = 0; k < itemSize; k ++ ) {
+
+					const getterFunc = getters[ k ];
+					newarray.push( attribute[ getterFunc ]( index ) );
+
+					if ( morphAttr ) {
+
+						for ( let m = 0, ml = morphAttr.length; m < ml; m ++ ) {
+
+							newMorphArrays[ m ].push( morphAttr[ m ][ getterFunc ]( index ) );
+
+						}
+
+					}
+
+				}
+
+			}
+
+			hashToIndex[ hash ] = nextIndex;
+			newIndices.push( nextIndex );
+			nextIndex ++;
+
+		}
+
+	}
+
+	// Generate typed arrays from new attribute arrays and update
+	// the attributeBuffers
+	const result = geometry.clone();
+	for ( let i = 0, l = attributeNames.length; i < l; i ++ ) {
+
+		const name = attributeNames[ i ];
+		const oldAttribute = geometry.getAttribute( name );
+
+		const buffer = new oldAttribute.array.constructor( attrArrays[ name ] );
+		const attribute = new BufferAttribute( buffer, oldAttribute.itemSize, oldAttribute.normalized );
+
+		result.setAttribute( name, attribute );
+
+		// Update the attribute arrays
+		if ( name in morphAttrsArrays ) {
+
+			for ( let j = 0; j < morphAttrsArrays[ name ].length; j ++ ) {
+
+				const oldMorphAttribute = geometry.morphAttributes[ name ][ j ];
+
+				const buffer = new oldMorphAttribute.array.constructor( morphAttrsArrays[ name ][ j ] );
+				const morphAttribute = new BufferAttribute( buffer, oldMorphAttribute.itemSize, oldMorphAttribute.normalized );
+				result.morphAttributes[ name ][ j ] = morphAttribute;
+
+			}
+
+		}
+
+	}
+
+	// indices
+
+	result.setIndex( newIndices );
+
+	return result;
+
+}
+
+/**
+ * @param {BufferGeometry} geometry
+ * @param {number} drawMode
+ * @return {BufferGeometry>}
+ */
+function toTrianglesDrawMode( geometry, drawMode ) {
+
+	if ( drawMode === TrianglesDrawMode ) {
+
+		console.warn( 'THREE.BufferGeometryUtils.toTrianglesDrawMode(): Geometry already defined as triangles.' );
+		return geometry;
+
+	}
+
+	if ( drawMode === TriangleFanDrawMode || drawMode === TriangleStripDrawMode ) {
+
+		let index = geometry.getIndex();
+
+		// generate index if not present
+
+		if ( index === null ) {
+
+			const indices = [];
+
+			const position = geometry.getAttribute( 'position' );
+
+			if ( position !== undefined ) {
+
+				for ( let i = 0; i < position.count; i ++ ) {
+
+					indices.push( i );
+
+				}
+
+				geometry.setIndex( indices );
+				index = geometry.getIndex();
+
+			} else {
+
+				console.error( 'THREE.BufferGeometryUtils.toTrianglesDrawMode(): Undefined position attribute. Processing not possible.' );
+				return geometry;
+
+			}
+
+		}
+
+		//
+
+		const numberOfTriangles = index.count - 2;
+		const newIndices = [];
+
+		if ( drawMode === TriangleFanDrawMode ) {
+
+			// gl.TRIANGLE_FAN
+
+			for ( let i = 1; i <= numberOfTriangles; i ++ ) {
+
+				newIndices.push( index.getX( 0 ) );
+				newIndices.push( index.getX( i ) );
+				newIndices.push( index.getX( i + 1 ) );
+
+			}
+
+		} else {
+
+			// gl.TRIANGLE_STRIP
+
+			for ( let i = 0; i < numberOfTriangles; i ++ ) {
+
+				if ( i % 2 === 0 ) {
+
+					newIndices.push( index.getX( i ) );
+					newIndices.push( index.getX( i + 1 ) );
+					newIndices.push( index.getX( i + 2 ) );
+
+				} else {
+
+					newIndices.push( index.getX( i + 2 ) );
+					newIndices.push( index.getX( i + 1 ) );
+					newIndices.push( index.getX( i ) );
+
+				}
+
+			}
+
+		}
+
+		if ( ( newIndices.length / 3 ) !== numberOfTriangles ) {
+
+			console.error( 'THREE.BufferGeometryUtils.toTrianglesDrawMode(): Unable to generate correct amount of triangles.' );
+
+		}
+
+		// build final geometry
+
+		const newGeometry = geometry.clone();
+		newGeometry.setIndex( newIndices );
+		newGeometry.clearGroups();
+
+		return newGeometry;
+
+	} else {
+
+		console.error( 'THREE.BufferGeometryUtils.toTrianglesDrawMode(): Unknown draw mode:', drawMode );
+		return geometry;
+
+	}
+
+}
+
+/**
+ * Calculates the morphed attributes of a morphed/skinned BufferGeometry.
+ * Helpful for Raytracing or Decals.
+ * @param {Mesh | Line | Points} object An instance of Mesh, Line or Points.
+ * @return {Object} An Object with original position/normal attributes and morphed ones.
+ */
+function computeMorphedAttributes( object ) {
+
+	if ( object.geometry.isBufferGeometry !== true ) {
+
+		console.error( 'THREE.BufferGeometryUtils: Geometry is not of type BufferGeometry.' );
+		return null;
+
+	}
+
+	const _vA = new Vector3();
+	const _vB = new Vector3();
+	const _vC = new Vector3();
+
+	const _tempA = new Vector3();
+	const _tempB = new Vector3();
+	const _tempC = new Vector3();
+
+	const _morphA = new Vector3();
+	const _morphB = new Vector3();
+	const _morphC = new Vector3();
+
+	function _calculateMorphedAttributeData(
+		object,
+		attribute,
+		morphAttribute,
+		morphTargetsRelative,
+		a,
+		b,
+		c,
+		modifiedAttributeArray
+	) {
+
+		_vA.fromBufferAttribute( attribute, a );
+		_vB.fromBufferAttribute( attribute, b );
+		_vC.fromBufferAttribute( attribute, c );
+
+		const morphInfluences = object.morphTargetInfluences;
+
+		if ( morphAttribute && morphInfluences ) {
+
+			_morphA.set( 0, 0, 0 );
+			_morphB.set( 0, 0, 0 );
+			_morphC.set( 0, 0, 0 );
+
+			for ( let i = 0, il = morphAttribute.length; i < il; i ++ ) {
+
+				const influence = morphInfluences[ i ];
+				const morph = morphAttribute[ i ];
+
+				if ( influence === 0 ) continue;
+
+				_tempA.fromBufferAttribute( morph, a );
+				_tempB.fromBufferAttribute( morph, b );
+				_tempC.fromBufferAttribute( morph, c );
+
+				if ( morphTargetsRelative ) {
+
+					_morphA.addScaledVector( _tempA, influence );
+					_morphB.addScaledVector( _tempB, influence );
+					_morphC.addScaledVector( _tempC, influence );
+
+				} else {
+
+					_morphA.addScaledVector( _tempA.sub( _vA ), influence );
+					_morphB.addScaledVector( _tempB.sub( _vB ), influence );
+					_morphC.addScaledVector( _tempC.sub( _vC ), influence );
+
+				}
+
+			}
+
+			_vA.add( _morphA );
+			_vB.add( _morphB );
+			_vC.add( _morphC );
+
+		}
+
+		if ( object.isSkinnedMesh ) {
+
+			object.boneTransform( a, _vA );
+			object.boneTransform( b, _vB );
+			object.boneTransform( c, _vC );
+
+		}
+
+		modifiedAttributeArray[ a * 3 + 0 ] = _vA.x;
+		modifiedAttributeArray[ a * 3 + 1 ] = _vA.y;
+		modifiedAttributeArray[ a * 3 + 2 ] = _vA.z;
+		modifiedAttributeArray[ b * 3 + 0 ] = _vB.x;
+		modifiedAttributeArray[ b * 3 + 1 ] = _vB.y;
+		modifiedAttributeArray[ b * 3 + 2 ] = _vB.z;
+		modifiedAttributeArray[ c * 3 + 0 ] = _vC.x;
+		modifiedAttributeArray[ c * 3 + 1 ] = _vC.y;
+		modifiedAttributeArray[ c * 3 + 2 ] = _vC.z;
+
+	}
+
+	const geometry = object.geometry;
+	const material = object.material;
+
+	let a, b, c;
+	const index = geometry.index;
+	const positionAttribute = geometry.attributes.position;
+	const morphPosition = geometry.morphAttributes.position;
+	const morphTargetsRelative = geometry.morphTargetsRelative;
+	const normalAttribute = geometry.attributes.normal;
+	const morphNormal = geometry.morphAttributes.position;
+
+	const groups = geometry.groups;
+	const drawRange = geometry.drawRange;
+	let i, j, il, jl;
+	let group;
+	let start, end;
+
+	const modifiedPosition = new Float32Array( positionAttribute.count * positionAttribute.itemSize );
+	const modifiedNormal = new Float32Array( normalAttribute.count * normalAttribute.itemSize );
+
+	if ( index !== null ) {
+
+		// indexed buffer geometry
+
+		if ( Array.isArray( material ) ) {
+
+			for ( i = 0, il = groups.length; i < il; i ++ ) {
+
+				group = groups[ i ];
+
+				start = Math.max( group.start, drawRange.start );
+				end = Math.min( ( group.start + group.count ), ( drawRange.start + drawRange.count ) );
+
+				for ( j = start, jl = end; j < jl; j += 3 ) {
+
+					a = index.getX( j );
+					b = index.getX( j + 1 );
+					c = index.getX( j + 2 );
+
+					_calculateMorphedAttributeData(
+						object,
+						positionAttribute,
+						morphPosition,
+						morphTargetsRelative,
+						a, b, c,
+						modifiedPosition
+					);
+
+					_calculateMorphedAttributeData(
+						object,
+						normalAttribute,
+						morphNormal,
+						morphTargetsRelative,
+						a, b, c,
+						modifiedNormal
+					);
+
+				}
+
+			}
+
+		} else {
+
+			start = Math.max( 0, drawRange.start );
+			end = Math.min( index.count, ( drawRange.start + drawRange.count ) );
+
+			for ( i = start, il = end; i < il; i += 3 ) {
+
+				a = index.getX( i );
+				b = index.getX( i + 1 );
+				c = index.getX( i + 2 );
+
+				_calculateMorphedAttributeData(
+					object,
+					positionAttribute,
+					morphPosition,
+					morphTargetsRelative,
+					a, b, c,
+					modifiedPosition
+				);
+
+				_calculateMorphedAttributeData(
+					object,
+					normalAttribute,
+					morphNormal,
+					morphTargetsRelative,
+					a, b, c,
+					modifiedNormal
+				);
+
+			}
+
+		}
+
+	} else {
+
+		// non-indexed buffer geometry
+
+		if ( Array.isArray( material ) ) {
+
+			for ( i = 0, il = groups.length; i < il; i ++ ) {
+
+				group = groups[ i ];
+
+				start = Math.max( group.start, drawRange.start );
+				end = Math.min( ( group.start + group.count ), ( drawRange.start + drawRange.count ) );
+
+				for ( j = start, jl = end; j < jl; j += 3 ) {
+
+					a = j;
+					b = j + 1;
+					c = j + 2;
+
+					_calculateMorphedAttributeData(
+						object,
+						positionAttribute,
+						morphPosition,
+						morphTargetsRelative,
+						a, b, c,
+						modifiedPosition
+					);
+
+					_calculateMorphedAttributeData(
+						object,
+						normalAttribute,
+						morphNormal,
+						morphTargetsRelative,
+						a, b, c,
+						modifiedNormal
+					);
+
+				}
+
+			}
+
+		} else {
+
+			start = Math.max( 0, drawRange.start );
+			end = Math.min( positionAttribute.count, ( drawRange.start + drawRange.count ) );
+
+			for ( i = start, il = end; i < il; i += 3 ) {
+
+				a = i;
+				b = i + 1;
+				c = i + 2;
+
+				_calculateMorphedAttributeData(
+					object,
+					positionAttribute,
+					morphPosition,
+					morphTargetsRelative,
+					a, b, c,
+					modifiedPosition
+				);
+
+				_calculateMorphedAttributeData(
+					object,
+					normalAttribute,
+					morphNormal,
+					morphTargetsRelative,
+					a, b, c,
+					modifiedNormal
+				);
+
+			}
+
+		}
+
+	}
+
+	const morphedPositionAttribute = new Float32BufferAttribute( modifiedPosition, 3 );
+	const morphedNormalAttribute = new Float32BufferAttribute( modifiedNormal, 3 );
+
+	return {
+
+		positionAttribute: positionAttribute,
+		normalAttribute: normalAttribute,
+		morphedPositionAttribute: morphedPositionAttribute,
+		morphedNormalAttribute: morphedNormalAttribute
+
+	};
+
+}
+
+function mergeGroups( geometry ) {
+
+	if ( geometry.groups.length === 0 ) {
+
+		console.warn( 'THREE.BufferGeometryUtils.mergeGroups(): No groups are defined. Nothing to merge.' );
+		return geometry;
+
+	}
+
+	let groups = geometry.groups;
+
+	// sort groups by material index
+
+	groups = groups.sort( ( a, b ) => {
+
+		if ( a.materialIndex !== b.materialIndex ) return a.materialIndex - b.materialIndex;
+
+		return a.start - b.start;
+
+	} );
+
+	// create index for non-indexed geometries
+
+	if ( geometry.getIndex() === null ) {
+
+		const positionAttribute = geometry.getAttribute( 'position' );
+		const indices = [];
+
+		for ( let i = 0; i < positionAttribute.count; i += 3 ) {
+
+			indices.push( i, i + 1, i + 2 );
+
+		}
+
+		geometry.setIndex( indices );
+
+	}
+
+	// sort index
+
+	const index = geometry.getIndex();
+
+	const newIndices = [];
+
+	for ( let i = 0; i < groups.length; i ++ ) {
+
+		const group = groups[ i ];
+
+		const groupStart = group.start;
+		const groupLength = groupStart + group.count;
+
+		for ( let j = groupStart; j < groupLength; j ++ ) {
+
+			newIndices.push( index.getX( j ) );
+
+		}
+
+	}
+
+	geometry.dispose(); // Required to force buffer recreation
+	geometry.setIndex( newIndices );
+
+	// update groups indices
+
+	let start = 0;
+
+	for ( let i = 0; i < groups.length; i ++ ) {
+
+		const group = groups[ i ];
+
+		group.start = start;
+		start += group.count;
+
+	}
+
+	// merge groups
+
+	let currentGroup = groups[ 0 ];
+
+	geometry.groups = [ currentGroup ];
+
+	for ( let i = 1; i < groups.length; i ++ ) {
+
+		const group = groups[ i ];
+
+		if ( currentGroup.materialIndex === group.materialIndex ) {
+
+			currentGroup.count += group.count;
+
+		} else {
+
+			currentGroup = group;
+			geometry.groups.push( currentGroup );
+
+		}
+
+	}
+
+	return geometry;
+
+}
+
+
+
+;// CONCATENATED MODULE: ./src/content/MSDFGlyph.js
+
 
 /**
  * Job: create a plane geometry with the right UVs to map the MSDF texture on the wanted glyph.
  *
  * Knows: dimension of the plane to create, specs of the font used, glyph requireed
  */
-class MSDFGlyph extends PlaneBufferGeometry {
+class MSDFGlyph extends external_three_namespaceObject.PlaneGeometry {
 
 	constructor( inline, font ) {
 
 		const char = inline.glyph;
 		const fontSize = inline.fontSize;
 
-		super( fontSize, fontSize );
+		// super( fontSize, fontSize );
+		super( inline.width, inline.height );
 
 		// Misc glyphs
 		if ( char.match( /\s/g ) === null ) {
@@ -3501,7 +4587,7 @@ class MSDFGlyph extends PlaneBufferGeometry {
 
 			this.mapUVs( font, char );
 
-			this.transformGeometry( font, fontSize, char, inline );
+			this.transformGeometry( inline );
 
 			// White spaces (we don't want our plane geometry to have a visual width nor a height)
 		} else {
@@ -3580,32 +4666,23 @@ class MSDFGlyph extends PlaneBufferGeometry {
 	}
 
 	/** Gives the previously computed scale and offset to the geometry */
-	transformGeometry( font, fontSize, char, inline ) {
-
-		const charOBJ = font.chars.find( charOBJ => charOBJ.char === char );
-
-		const common = font.common;
-
-		const newHeight = charOBJ.height / common.lineHeight;
-		const newWidth = ( charOBJ.width * newHeight ) / charOBJ.height;
-
-		this.scale(
-			newWidth,
-			newHeight,
-			1
-		);
-
-		//
+	transformGeometry( inline ) {
 
 		this.translate(
 			inline.width / 2,
-			( inline.height / 2 ) - inline.anchor,
+				inline.height / 2,
 			0
 		);
 
 	}
 
 }
+
+;// CONCATENATED MODULE: ./src/content/MSDFText.js
+
+
+
+
 
 /**
 
@@ -3655,9 +4732,9 @@ function getGlyphDimensions( options ) {
 	const xoffset = charOBJ ? charOBJ.xoffset * SCALE_MULT : 0;
 
 	// world-space length between lowest point and the text cursor position
-	const anchor = charOBJ ? ( ( charOBJ.yoffset + charOBJ.height - FONT.common.base ) * FONT_SIZE ) / FONT.common.lineHeight : 0;
+	// const anchor = charOBJ ? ( ( charOBJ.yoffset + charOBJ.height - FONT.common.base ) * FONT_SIZE ) / FONT.common.lineHeight : 0;
 
-	// const lineHeight = FONT.common.lineHeight * SCALE_MULT;
+	const anchor = charOBJ ? charOBJ.yoffset * SCALE_MULT : 0;
 
 	// console.log( lineHeight )
 
@@ -3709,7 +4786,7 @@ function buildText() {
 
 	const mergedGeom = mergeBufferGeometries( translatedGeom );
 
-	const mesh = new Mesh( mergedGeom, this.getFontMaterial() );
+	const mesh = new external_three_namespaceObject.Mesh( mergedGeom, this.getFontMaterial() );
 
 	return mesh;
 
@@ -3717,11 +4794,14 @@ function buildText() {
 
 //
 
-var MSDFText = {
+/* harmony default export */ const MSDFText = ({
 	getGlyphDimensions,
 	getGlyphPairKerning,
 	buildText
-};
+});
+
+;// CONCATENATED MODULE: ./src/components/core/TextManager.js
+
 
 /**
 
@@ -3825,6 +4905,9 @@ function TextManager( Base ) {
 
 }
 
+;// CONCATENATED MODULE: ./src/utils/deepDelete.js
+
+
 /** Recursively erase THE CHILDREN of the passed object */
 function deepDelete( object3D ) {
 
@@ -3846,6 +4929,21 @@ function deepDelete( object3D ) {
 
 }
 
+/* harmony default export */ const utils_deepDelete = (deepDelete);
+
+;// CONCATENATED MODULE: ./src/components/Text.js
+
+
+
+
+
+
+
+
+
+
+
+
 /**
 
 Job:
@@ -3858,7 +4956,7 @@ Knows:
 - Parent block
 
  */
-class Text extends mix.withBase( Object3D )(
+class Text extends mix.withBase( external_three_namespaceObject.Object3D )(
 	InlineComponent,
 	TextManager,
 	MaterialManager,
@@ -3900,7 +4998,7 @@ class Text extends mix.withBase( Object3D )(
 	 */
 	updateLayout() {
 
-		deepDelete( this );
+		utils_deepDelete( this );
 
 		if ( this.inlines ) {
 
@@ -3937,7 +5035,7 @@ class Text extends mix.withBase( Object3D )(
 
 		if ( !font || typeof font === 'string' ) {
 
-			if ( !FontLibrary.getFontOf( this ) ) console.warn( 'no font was found' );
+			if ( !core_FontLibrary.getFontOf( this ) ) console.warn( 'no font was found' );
 			return;
 
 		}
@@ -4037,6 +5135,18 @@ class Text extends mix.withBase( Object3D )(
 
 }
 
+;// CONCATENATED MODULE: ./src/components/InlineBlock.js
+
+
+
+
+
+
+
+
+
+
+
 /**
  * Job:
  * - computing its own size according to user measurements or content measurement
@@ -4046,7 +5156,7 @@ class Text extends mix.withBase( Object3D )(
  * - Its measurements parameter
  * - Parent block
  */
-class InlineBlock extends mix.withBase( Object3D )(
+class InlineBlock extends mix.withBase( external_three_namespaceObject.Object3D )(
 	InlineComponent,
 	BoxComponent,
 	InlineManager,
@@ -4062,7 +5172,7 @@ class InlineBlock extends mix.withBase( Object3D )(
 
 		//
 
-		this.size = new Vector2( 1, 1 );
+		this.size = new external_three_namespaceObject.Vector2( 1, 1 );
 
 		this.frame = new Frame( this.getBackgroundMaterial() );
 
@@ -4168,6 +5278,7 @@ class InlineBlock extends mix.withBase( Object3D )(
 
 }
 
+;// CONCATENATED MODULE: ./src/utils/Keymaps.js
 /**
 
 Contains key maps for the Keyboard component.
@@ -4175,7 +5286,7 @@ Most languages need a specific keyboard. Therefore, Keyboard takes a language at
 and if not passed tries to detect the language. If not found, it uses the basic QZERTY layout.
 
  */
-var keymaps = {
+/* harmony default export */ const Keymaps = ({
 
 	fr:
 		[
@@ -4891,18 +6002,32 @@ var keymaps = {
 			]
 		]
 
-};
+});
+
+;// CONCATENATED MODULE: ./src/components/Keyboard.js
+
+
+
+
+
+
+
+
+
+
+
+
 
 //
 
-const textureLoader = new TextureLoader();
+const Keyboard_textureLoader = new external_three_namespaceObject.TextureLoader();
 
 //
 
 /**
  * Job: high-level component that returns a keyboard
  */
-class Keyboard extends mix.withBase( Object3D )( BoxComponent, MeshUIComponent ) {
+class Keyboard extends mix.withBase( external_three_namespaceObject.Object3D )( BoxComponent, MeshUIComponent ) {
 
 	constructor( options ) {
 
@@ -4941,12 +6066,12 @@ class Keyboard extends mix.withBase( Object3D )( BoxComponent, MeshUIComponent )
 				case 'fr' :
 				case 'fr-CH' :
 				case 'fr-CA' :
-					keymap = keymaps.fr;
+					keymap = Keymaps.fr;
 					break;
 
 				case 'ru' :
 					this.charsetCount = 2;
-					keymap = keymaps.ru;
+					keymap = Keymaps.ru;
 					break;
 
 				case 'de' :
@@ -4954,7 +6079,7 @@ class Keyboard extends mix.withBase( Object3D )( BoxComponent, MeshUIComponent )
 				case 'de-AT' :
 				case 'de-LI' :
 				case 'de-CH' :
-					keymap = keymaps.de;
+					keymap = Keymaps.de;
 					break;
 
 				case 'es' :
@@ -4970,27 +6095,27 @@ class Keyboard extends mix.withBase( Object3D )( BoxComponent, MeshUIComponent )
 				case 'es-PE' :
 				case 'es-UY' :
 				case 'es-VE' :
-					keymap = keymaps.es;
+					keymap = Keymaps.es;
 					break;
 
 				case 'el' :
 					this.charsetCount = 2;
-					keymap = keymaps.el;
+					keymap = Keymaps.el;
 					break;
 
 				case 'nord' :
-					keymap = keymaps.nord;
+					keymap = Keymaps.nord;
 					break;
 
 				default :
-					keymap = keymaps.eng;
+					keymap = Keymaps.eng;
 					break;
 
 			}
 
 		} else {
 
-			keymap = keymaps.eng;
+			keymap = Keymaps.eng;
 
 		}
 
@@ -5068,7 +6193,7 @@ class Keyboard extends mix.withBase( Object3D )( BoxComponent, MeshUIComponent )
 
 						} )();
 
-						textureLoader.load( url, ( texture ) => {
+						Keyboard_textureLoader.load( url, ( texture ) => {
 
 							key.add(
 								new InlineBlock( {
@@ -5224,25 +6349,63 @@ class Keyboard extends mix.withBase( Object3D )( BoxComponent, MeshUIComponent )
 
 }
 
+;// CONCATENATED MODULE: ./src/three-mesh-ui.js
 /* global global */
+
+
+
+
+
+
+
+
+
+
+
+
 
 const update = () => UpdateManager.update();
 
 const ThreeMeshUI = {
-	Block,
-	Text,
-	InlineBlock,
-	Keyboard,
-	FontLibrary,
+	Block: Block,
+	Text: Text,
+	InlineBlock: InlineBlock,
+	Keyboard: Keyboard,
+	FontLibrary: core_FontLibrary,
 	update,
-	TextAlign,
-	Whitespace,
-	JustifyContent,
-	AlignItems,
-	ContentDirection
+	TextAlign: TextAlign_namespaceObject,
+	Whitespace: Whitespace_namespaceObject,
+	JustifyContent: JustifyContent_namespaceObject,
+	AlignItems: AlignItems_namespaceObject,
+	ContentDirection: ContentDirection_namespaceObject
 };
 
 if ( typeof global !== 'undefined' ) global.ThreeMeshUI = ThreeMeshUI;
 
-export { AlignItems, Block, ContentDirection, FontLibrary, InlineBlock, JustifyContent, Keyboard, Text, TextAlign, Whitespace, ThreeMeshUI as default, update };
-//# sourceMappingURL=three-mesh-ui.esm.js.map
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ const three_mesh_ui = (ThreeMeshUI);
+
+var __webpack_exports__AlignItems = __webpack_exports__.g1;
+var __webpack_exports__Block = __webpack_exports__.gO;
+var __webpack_exports__ContentDirection = __webpack_exports__.km;
+var __webpack_exports__FontLibrary = __webpack_exports__.zV;
+var __webpack_exports__InlineBlock = __webpack_exports__.ol;
+var __webpack_exports__JustifyContent = __webpack_exports__.uM;
+var __webpack_exports__Keyboard = __webpack_exports__.N1;
+var __webpack_exports__Text = __webpack_exports__.xv;
+var __webpack_exports__TextAlign = __webpack_exports__.PH;
+var __webpack_exports__Whitespace = __webpack_exports__.UH;
+var __webpack_exports__default = __webpack_exports__.ZP;
+var __webpack_exports__update = __webpack_exports__.Vx;
+export { __webpack_exports__AlignItems as AlignItems, __webpack_exports__Block as Block, __webpack_exports__ContentDirection as ContentDirection, __webpack_exports__FontLibrary as FontLibrary, __webpack_exports__InlineBlock as InlineBlock, __webpack_exports__JustifyContent as JustifyContent, __webpack_exports__Keyboard as Keyboard, __webpack_exports__Text as Text, __webpack_exports__TextAlign as TextAlign, __webpack_exports__Whitespace as Whitespace, __webpack_exports__default as default, __webpack_exports__update as update };
