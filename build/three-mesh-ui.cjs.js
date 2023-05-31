@@ -1,123 +1,9 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	// The require scope
-/******/ 	var __webpack_require__ = {};
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
+'use strict';
 
-// UNUSED EXPORTS: AlignItems, Block, ContentDirection, FontLibrary, InlineBlock, JustifyContent, Keyboard, Text, TextAlign, Whitespace, default, update
+Object.defineProperty(exports, '__esModule', { value: true });
 
-// NAMESPACE OBJECT: ./src/utils/block-layout/ContentDirection.js
-var ContentDirection_namespaceObject = {};
-__webpack_require__.r(ContentDirection_namespaceObject);
-__webpack_require__.d(ContentDirection_namespaceObject, {
-  "COLUMN": () => (COLUMN),
-  "COLUMN_REVERSE": () => (COLUMN_REVERSE),
-  "ROW": () => (ROW),
-  "ROW_REVERSE": () => (ROW_REVERSE),
-  "contentDirection": () => (contentDirection)
-});
+var three = require('three');
 
-// NAMESPACE OBJECT: ./src/utils/block-layout/AlignItems.js
-var AlignItems_namespaceObject = {};
-__webpack_require__.r(AlignItems_namespaceObject);
-__webpack_require__.d(AlignItems_namespaceObject, {
-  "CENTER": () => (CENTER),
-  "END": () => (END),
-  "START": () => (START),
-  "STRETCH": () => (STRETCH),
-  "alignItems": () => (alignItems),
-  "warnAboutDeprecatedAlignItems": () => (warnAboutDeprecatedAlignItems)
-});
-
-// NAMESPACE OBJECT: ./src/utils/block-layout/JustifyContent.js
-var JustifyContent_namespaceObject = {};
-__webpack_require__.r(JustifyContent_namespaceObject);
-__webpack_require__.d(JustifyContent_namespaceObject, {
-  "CENTER": () => (JustifyContent_CENTER),
-  "END": () => (JustifyContent_END),
-  "SPACE_AROUND": () => (SPACE_AROUND),
-  "SPACE_BETWEEN": () => (SPACE_BETWEEN),
-  "SPACE_EVENLY": () => (SPACE_EVENLY),
-  "START": () => (JustifyContent_START),
-  "justifyContent": () => (justifyContent)
-});
-
-// NAMESPACE OBJECT: ./src/utils/inline-layout/Whitespace.js
-var Whitespace_namespaceObject = {};
-__webpack_require__.r(Whitespace_namespaceObject);
-__webpack_require__.d(Whitespace_namespaceObject, {
-  "NORMAL": () => (NORMAL),
-  "NOWRAP": () => (NOWRAP),
-  "PRE": () => (PRE),
-  "PRE_LINE": () => (PRE_LINE),
-  "PRE_WRAP": () => (PRE_WRAP),
-  "WHITE_CHARS": () => (WHITE_CHARS),
-  "collapseWhitespaceOnInlines": () => (collapseWhitespaceOnInlines),
-  "collapseWhitespaceOnString": () => (collapseWhitespaceOnString),
-  "newlineBreakability": () => (newlineBreakability),
-  "shouldBreak": () => (Whitespace_shouldBreak)
-});
-
-// NAMESPACE OBJECT: ./src/utils/inline-layout/TextAlign.js
-var TextAlign_namespaceObject = {};
-__webpack_require__.r(TextAlign_namespaceObject);
-__webpack_require__.d(TextAlign_namespaceObject, {
-  "CENTER": () => (TextAlign_CENTER),
-  "JUSTIFY": () => (JUSTIFY),
-  "JUSTIFY_CENTER": () => (JUSTIFY_CENTER),
-  "JUSTIFY_LEFT": () => (JUSTIFY_LEFT),
-  "JUSTIFY_RIGHT": () => (JUSTIFY_RIGHT),
-  "LEFT": () => (LEFT),
-  "RIGHT": () => (RIGHT),
-  "textAlign": () => (textAlign)
-});
-
-;// CONCATENATED MODULE: external "THREE"
-const external_THREE_namespaceObject = THREE;
-;// CONCATENATED MODULE: ./src/utils/block-layout/ContentDirection.js
 const ROW = "row";
 const ROW_REVERSE = "row-reverse";
 const COLUMN = "column";
@@ -163,13 +49,18 @@ function contentDirection( container, DIRECTION, startPos, REVERSE ){
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/block-layout/AlignItems.js
+var ContentDirection = /*#__PURE__*/Object.freeze({
+	__proto__: null,
+	ROW: ROW,
+	ROW_REVERSE: ROW_REVERSE,
+	COLUMN: COLUMN,
+	COLUMN_REVERSE: COLUMN_REVERSE,
+	contentDirection: contentDirection
+});
 
-
-
-const START = "start";
-const CENTER = "center";
-const END = "end";
+const START$1 = "start";
+const CENTER$2 = "center";
+const END$1 = "end";
 const STRETCH = "stretch"; // Still bit experimental
 
 function alignItems( boxComponent, DIRECTION){
@@ -197,14 +88,14 @@ function alignItems( boxComponent, DIRECTION){
 
 		switch ( ALIGNMENT ){
 
-			case END:
+			case END$1:
 			case 'right': // @TODO : Deprecated and will be remove upon 7.x.x
 			case 'bottom': // @TODO : Deprecated and will be remove upon 7.x.x
 				if( DIRECTION.indexOf( ROW ) === 0 ){
 
 					offset = - AXIS_TARGET + ( child[getSizeMethod]() / 2 ) + ( child.margin || 0 );
 
-				}else{
+				}else {
 
 					offset = AXIS_TARGET - ( child[getSizeMethod]() / 2 ) - ( child.margin || 0 );
 
@@ -212,14 +103,14 @@ function alignItems( boxComponent, DIRECTION){
 
 				break;
 
-			case START:
+			case START$1:
 			case 'left': // @TODO : Deprecated and will be remove upon 7.x.x
 			case 'top': // @TODO : Deprecated and will be remove upon 7.x.x
 				if( DIRECTION.indexOf( ROW ) === 0 ){
 
 					offset = AXIS_TARGET - ( child[getSizeMethod]() / 2 ) - ( child.margin || 0 );
 
-				}else{
+				}else {
 
 					offset = - AXIS_TARGET + ( child[getSizeMethod]() / 2 ) + ( child.margin || 0 );
 
@@ -243,16 +134,16 @@ function warnAboutDeprecatedAlignItems( alignment ){
 
 	if( DEPRECATED_ALIGN_ITEMS.indexOf(alignment) !== - 1){
 
-		console.warn(`alignItems === '${alignment}' is deprecated and will be remove in 7.x.x. Fallback are 'start'|'end'`)
+		console.warn(`alignItems === '${alignment}' is deprecated and will be remove in 7.x.x. Fallback are 'start'|'end'`);
 
 	}
 
 }
 
 const AVAILABLE_ALIGN_ITEMS = [
-	START,
-	CENTER,
-	END,
+	START$1,
+	CENTER$2,
+	END$1,
 	STRETCH,
 	'top', // @TODO: Be remove upon 7.x.x
 	'right', // @TODO: Be remove upon 7.x.x
@@ -268,11 +159,19 @@ const DEPRECATED_ALIGN_ITEMS = [
 	'left'
 ];
 
+var AlignItems = /*#__PURE__*/Object.freeze({
+	__proto__: null,
+	START: START$1,
+	CENTER: CENTER$2,
+	END: END$1,
+	STRETCH: STRETCH,
+	alignItems: alignItems,
+	warnAboutDeprecatedAlignItems: warnAboutDeprecatedAlignItems
+});
 
-;// CONCATENATED MODULE: ./src/utils/block-layout/JustifyContent.js
-const JustifyContent_START = "start";
-const JustifyContent_CENTER = "center";
-const JustifyContent_END = "end";
+const START = "start";
+const CENTER$1 = "center";
+const END = "end";
 const SPACE_AROUND = 'space-around';
 const SPACE_BETWEEN = 'space-between';
 const SPACE_EVENLY = 'space-evenly';
@@ -286,7 +185,7 @@ function justifyContent( boxComponent, direction, startPos, REVERSE){
 
 	}
 
-	const side = direction.indexOf('row') === 0 ? 'width' : 'height'
+	const side = direction.indexOf('row') === 0 ? 'width' : 'height';
 	const usedDirectionSpace = boxComponent.getChildrenSideSum( side );
 
 	const INNER_SIZE = side === 'width' ? boxComponent.getInnerWidth() : boxComponent.getInnerHeight();
@@ -301,7 +200,7 @@ function justifyContent( boxComponent, direction, startPos, REVERSE){
 	const justificationMargins = _getJustificationMargin( boxComponent.childrenBoxes, remainingSpace, JUSTIFICATION, REVERSE );
 
 	// Apply
-	const axis = direction.indexOf( 'row' ) === 0 ? "x" : "y"
+	const axis = direction.indexOf( 'row' ) === 0 ? "x" : "y";
 	boxComponent.childrenBoxes.forEach( ( child , childIndex ) => {
 
 		boxComponent.childrenPos[ child.id ][axis] -= justificationOffset - justificationMargins[childIndex];
@@ -310,9 +209,9 @@ function justifyContent( boxComponent, direction, startPos, REVERSE){
 }
 
 const AVAILABLE_JUSTIFICATIONS = [
-	JustifyContent_START,
-	JustifyContent_CENTER,
-	JustifyContent_END,
+	START,
+	CENTER$1,
+	END,
 	SPACE_AROUND,
 	SPACE_BETWEEN,
 	SPACE_EVENLY
@@ -329,10 +228,10 @@ function _getJustificationOffset( justification, axisOffset ){
 	// Only end and center have justification offset
 	switch ( justification ){
 
-		case JustifyContent_END:
+		case END:
 			return axisOffset;
 
-		case JustifyContent_CENTER:
+		case CENTER$1:
 			return axisOffset / 2;
 	}
 
@@ -421,7 +320,17 @@ function _getJustificationMargin( items, spaceToDistribute, justification, rever
 
 }
 
-;// CONCATENATED MODULE: ./src/components/core/BoxComponent.js
+var JustifyContent = /*#__PURE__*/Object.freeze({
+	__proto__: null,
+	START: START,
+	CENTER: CENTER$1,
+	END: END,
+	SPACE_AROUND: SPACE_AROUND,
+	SPACE_BETWEEN: SPACE_BETWEEN,
+	SPACE_EVENLY: SPACE_EVENLY,
+	justifyContent: justifyContent
+});
+
 /**
 
 Job: Handle everything related to a BoxComponent element dimensioning and positioning
@@ -433,10 +342,6 @@ its children position. A Block can only have either only box components (Block)
 as children, or only inline components (Text, InlineBlock).
 
  */
-
-
-
-
 
 function BoxComponent( Base ) {
 
@@ -633,8 +538,6 @@ function BoxComponent( Base ) {
 
 }
 
-
-;// CONCATENATED MODULE: ./src/utils/inline-layout/Whitespace.js
 /**
  * @see https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace#whitespace_helper_functions
  *
@@ -677,8 +580,6 @@ const collapseWhitespaceOnString = function ( textContent, whiteSpace ) {
 			textContent = textContent.replace( /[ ]{2,}/g, ' ' );
 			break;
 
-		default:
-
 	}
 
 	return textContent;
@@ -699,10 +600,6 @@ const newlineBreakability = function ( whiteSpace ) {
 		case PRE_WRAP:
 		case PRE_LINE:
 			return 'mandatory';
-
-		case NOWRAP:
-		case NORMAL:
-		default:
 		// do not automatically break on newline
 
 	}
@@ -718,7 +615,7 @@ const newlineBreakability = function ( whiteSpace ) {
  * @param options
  * @returns {boolean}
  */
-const Whitespace_shouldBreak = function( inlines, i, lastInlineOffset, options){
+const shouldBreak = function( inlines, i, lastInlineOffset, options){
 	const inline = inlines[i];
 
 	switch ( options.WHITESPACE ){
@@ -749,7 +646,7 @@ const Whitespace_shouldBreak = function( inlines, i, lastInlineOffset, options){
 		default:
 			return false;
 	}
-}
+};
 
 
 /**
@@ -946,10 +843,23 @@ function _shouldFriendlyBreak( prevChar, lastInlineOffset, nextBreak, options ) 
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/inline-layout/TextAlign.js
+var Whitespace = /*#__PURE__*/Object.freeze({
+	__proto__: null,
+	WHITE_CHARS: WHITE_CHARS,
+	NORMAL: NORMAL,
+	NOWRAP: NOWRAP,
+	PRE: PRE,
+	PRE_LINE: PRE_LINE,
+	PRE_WRAP: PRE_WRAP,
+	collapseWhitespaceOnString: collapseWhitespaceOnString,
+	newlineBreakability: newlineBreakability,
+	shouldBreak: shouldBreak,
+	collapseWhitespaceOnInlines: collapseWhitespaceOnInlines
+});
+
 const LEFT = 'left';
 const RIGHT = 'right';
-const TextAlign_CENTER = 'center';
+const CENTER = 'center';
 const JUSTIFY = 'justify';
 const JUSTIFY_LEFT = 'justify-left';
 const JUSTIFY_RIGHT = 'justify-right';
@@ -1052,7 +962,7 @@ const _computeLineOffset = ( line, ALIGNMENT, INNER_WIDTH, lastLine ) => {
 			return -line.width + ( INNER_WIDTH / 2 );
 
 
-		case TextAlign_CENTER:
+		case CENTER:
 			return -line.width / 2;
 
 		case JUSTIFY_CENTER:
@@ -1073,7 +983,18 @@ const _computeLineOffset = ( line, ALIGNMENT, INNER_WIDTH, lastLine ) => {
 
 };
 
-;// CONCATENATED MODULE: ./src/components/core/InlineManager.js
+var TextAlign = /*#__PURE__*/Object.freeze({
+	__proto__: null,
+	LEFT: LEFT,
+	RIGHT: RIGHT,
+	CENTER: CENTER,
+	JUSTIFY: JUSTIFY,
+	JUSTIFY_LEFT: JUSTIFY_LEFT,
+	JUSTIFY_RIGHT: JUSTIFY_RIGHT,
+	JUSTIFY_CENTER: JUSTIFY_CENTER,
+	textAlign: textAlign
+});
+
 /**
 
 Job: Positioning inline elements according to their dimensions inside this component
@@ -1089,8 +1010,6 @@ in order to create a line break when necessary. It's Text that merge the various
 in its own updateLayout function.
 
  */
-
-
 
 function InlineManager( Base ) {
 
@@ -1358,7 +1277,7 @@ function InlineManager( Base ) {
 						LETTERSPACING,
 						BREAKON,
 						INNER_WIDTH
-					}
+					};
 
 					const currentInlineInfo = inlineComponent.inlines.reduce( ( lastInlineOffset, inline, i, inlines ) => {
 
@@ -1367,9 +1286,9 @@ function InlineManager( Base ) {
 						const xadvance = inline.xadvance ? inline.xadvance : inline.width;
 
 						// Line break
-						const shouldBreak = Whitespace_shouldBreak(inlines,i,lastInlineOffset, whiteSpaceOptions );
+						const shouldBreak$1 = shouldBreak(inlines,i,lastInlineOffset, whiteSpaceOptions );
 
-						if ( shouldBreak ) {
+						if ( shouldBreak$1 ) {
 
 							lines.push( [ inline ] );
 
@@ -1514,7 +1433,6 @@ function InlineManager( Base ) {
 
 }
 
-;// CONCATENATED MODULE: ./src/components/core/FontLibrary.js
 /*
 
 Job:
@@ -1531,13 +1449,11 @@ loading it twice, even if the two component are not in the same parent/child hie
 
 */
 
-
-
-const fileLoader = new external_THREE_namespaceObject.FileLoader();
+const fileLoader = new three.FileLoader();
 const requiredFontFamilies = [];
 const fontFamilies = {};
 
-const textureLoader = new external_THREE_namespaceObject.TextureLoader();
+const textureLoader$1 = new three.TextureLoader();
 const requiredFontTextures = [];
 const fontTextures = {};
 
@@ -1586,11 +1502,11 @@ function setFontTexture( component, url ) {
 
 		requiredFontTextures.push( url );
 
-		textureLoader.load( url, ( texture ) => {
+		textureLoader$1.load( url, ( texture ) => {
 
 			texture.generateMipmaps = false;
-			texture.minFilter = external_THREE_namespaceObject.LinearFilter;
-			texture.magFilter = external_THREE_namespaceObject.LinearFilter;
+			texture.minFilter = three.LinearFilter;
+			texture.magFilter = three.LinearFilter;
 
 			fontTextures[ url ] = texture;
 
@@ -1730,8 +1646,8 @@ font with specified name will be overwritten, but components using it won't be u
 function addFont( name, json, texture ) {
 
 	texture.generateMipmaps = false;
-	texture.minFilter = external_THREE_namespaceObject.LinearFilter;
-	texture.magFilter = external_THREE_namespaceObject.LinearFilter;
+	texture.minFilter = three.LinearFilter;
+	texture.magFilter = three.LinearFilter;
 
 	requiredFontFamilies.push( name );
 	fontFamilies[ name ] = json;
@@ -1754,9 +1670,6 @@ const FontLibrary = {
 	addFont
 };
 
-/* harmony default export */ const core_FontLibrary = (FontLibrary);
-
-;// CONCATENATED MODULE: ./src/components/core/UpdateManager.js
 /**
  * Job:
  * - recording components required updates
@@ -1929,18 +1842,8 @@ class UpdateManager {
 UpdateManager.components = [];
 UpdateManager.requestedUpdates = {};
 
-;// CONCATENATED MODULE: ./src/utils/Defaults.js
-
-
-
-
-
-
-
-
-
 /** List the default values of the lib components */
-/* harmony default export */ const Defaults = ({
+var Defaults = {
 	container: null,
 	fontFamily: null,
 	fontSize: 0.05,
@@ -1951,28 +1854,28 @@ UpdateManager.requestedUpdates = {};
 	breakOn: '- ,.:?!\n',// added '\n' to also acts as friendly breaks when white-space:normal
 	whiteSpace: PRE_LINE,
 	contentDirection: COLUMN,
-	alignItems: CENTER,
-	justifyContent: JustifyContent_START,
-	textAlign: TextAlign_CENTER,
+	alignItems: CENTER$2,
+	justifyContent: START,
+	textAlign: CENTER,
 	textType: 'MSDF',
-	fontColor: new external_THREE_namespaceObject.Color( 0xffffff ),
+	fontColor: new three.Color( 0xffffff ),
 	fontOpacity: 1,
 	fontPXRange: 4,
 	fontSupersampling: true,
 	borderRadius: 0.01,
 	borderWidth: 0,
-	borderColor: new external_THREE_namespaceObject.Color( 'black' ),
+	borderColor: new three.Color( 'black' ),
 	borderOpacity: 1,
 	backgroundSize: "cover",
-	backgroundColor: new external_THREE_namespaceObject.Color( 0x222222 ),
-	backgroundWhiteColor: new external_THREE_namespaceObject.Color( 0xffffff ),
+	backgroundColor: new three.Color( 0x222222 ),
+	backgroundWhiteColor: new three.Color( 0xffffff ),
 	backgroundOpacity: 0.8,
 	backgroundOpaqueOpacity: 1.0,
 	// this default value is a function to avoid initialization issues (see issue #126)
 	getDefaultTexture,
 	hiddenOverflow: false,
 	letterSpacing: 0
-});
+};
 
 //
 
@@ -1987,7 +1890,7 @@ function getDefaultTexture() {
 		ctx.canvas.height = 1;
 		ctx.fillStyle = '#ffffff';
 		ctx.fillRect( 0, 0, 1, 1 );
-		defaultTexture = new external_THREE_namespaceObject.CanvasTexture( ctx.canvas );
+		defaultTexture = new three.CanvasTexture( ctx.canvas );
 		defaultTexture.isDefault = true;
 
 	}
@@ -1995,16 +1898,6 @@ function getDefaultTexture() {
 	return defaultTexture;
 
 }
-
-;// CONCATENATED MODULE: ./src/components/core/MeshUIComponent.js
-
-
-
-
-
-
-
-
 
 /**
 
@@ -2059,10 +1952,10 @@ function MeshUIComponent( Base ) {
 					const xLimit = ( this.parentUI.getWidth() / 2 ) - ( this.parentUI.padding || 0 );
 
 					const newPlanes = [
-						new external_THREE_namespaceObject.Plane( new external_THREE_namespaceObject.Vector3( 0, 1, 0 ), yLimit ),
-						new external_THREE_namespaceObject.Plane( new external_THREE_namespaceObject.Vector3( 0, -1, 0 ), yLimit ),
-						new external_THREE_namespaceObject.Plane( new external_THREE_namespaceObject.Vector3( 1, 0, 0 ), xLimit ),
-						new external_THREE_namespaceObject.Plane( new external_THREE_namespaceObject.Vector3( -1, 0, 0 ), xLimit )
+						new three.Plane( new three.Vector3( 0, 1, 0 ), yLimit ),
+						new three.Plane( new three.Vector3( 0, -1, 0 ), yLimit ),
+						new three.Plane( new three.Vector3( 1, 0, 0 ), xLimit ),
+						new three.Plane( new three.Vector3( -1, 0, 0 ), xLimit )
 					];
 
 					newPlanes.forEach( plane => {
@@ -2505,7 +2398,7 @@ function MeshUIComponent( Base ) {
 
 				}
 
-				console.warn("`alignContent` property has been deprecated, please rely on `alignItems` and `textAlign` instead.")
+				console.warn("`alignContent` property has been deprecated, please rely on `alignItems` and `textAlign` instead.");
 
 				delete options["alignContent"];
 
@@ -2604,13 +2497,13 @@ function MeshUIComponent( Base ) {
 
 			if ( options.fontFamily ) {
 
-				core_FontLibrary.setFontFamily( this, options.fontFamily );
+				FontLibrary.setFontFamily( this, options.fontFamily );
 
 			}
 
 			if ( options.fontTexture ) {
 
-				core_FontLibrary.setFontTexture( this, options.fontTexture );
+				FontLibrary.setFontTexture( this, options.fontTexture );
 
 			}
 
@@ -2678,12 +2571,7 @@ function MeshUIComponent( Base ) {
 
 }
 
-;// CONCATENATED MODULE: ./src/components/core/MaterialManager.js
 /* eslint-disable camelcase */
-//@TODO: Get rid of non camelcase uniforms
-
-
-
 
 /**
 
@@ -2725,8 +2613,8 @@ function MaterialManager( Base ) {
 				u_borderRadiusBottomRight: { value: this.getBorderRadius() },
 				u_borderRadiusBottomLeft: { value: this.getBorderRadius() },
 				u_borderOpacity: { value: this.getBorderOpacity() },
-				u_size: { value: new external_THREE_namespaceObject.Vector2( 1, 1 ) },
-				u_tSize: { value: new external_THREE_namespaceObject.Vector2( 1, 1 ) }
+				u_size: { value: new three.Vector2( 1, 1 ) },
+				u_tSize: { value: new three.Vector2( 1, 1 ) }
 			};
 
 		}
@@ -2845,7 +2733,7 @@ function MaterialManager( Base ) {
 		/** @private */
 		_makeTextMaterial() {
 
-			return new external_THREE_namespaceObject.ShaderMaterial( {
+			return new three.ShaderMaterial( {
 				uniforms: this.textUniforms,
 				transparent: true,
 				clipping: true,
@@ -2861,7 +2749,7 @@ function MaterialManager( Base ) {
 		/** @private */
 		_makeBackgroundMaterial() {
 
-			return new external_THREE_namespaceObject.ShaderMaterial( {
+			return new three.ShaderMaterial( {
 				uniforms: this.backgroundUniforms,
 				transparent: true,
 				clipping: true,
@@ -3126,18 +3014,14 @@ void main() {
 }
 `;
 
-;// CONCATENATED MODULE: ./src/content/Frame.js
-
-
-
 /**
  * Returns a basic plane mesh.
  */
-class Frame extends external_THREE_namespaceObject.Mesh {
+class Frame extends three.Mesh {
 
 	constructor( material ) {
 
-		const geometry = new external_THREE_namespaceObject.PlaneGeometry();
+		const geometry = new three.PlaneGeometry();
 
 		super( geometry, material );
 
@@ -3150,7 +3034,6 @@ class Frame extends external_THREE_namespaceObject.Mesh {
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/mix.js
 let _Base = null;
 
 /**
@@ -3191,17 +3074,6 @@ mix.withBase = ( Base ) => {
 
 };
 
-;// CONCATENATED MODULE: ./src/components/Block.js
-
-
-
-
-
-
-
-
-
-
 /**
 
 Job:
@@ -3211,7 +3083,7 @@ Job:
 - Call creation and update functions of its background planes
 
  */
-class Block extends mix.withBase( external_THREE_namespaceObject.Object3D )(
+class Block extends mix.withBase( three.Object3D )(
 	BoxComponent,
 	InlineManager,
 	MaterialManager,
@@ -3226,7 +3098,7 @@ class Block extends mix.withBase( external_THREE_namespaceObject.Object3D )(
 
 		//
 
-		this.size = new external_THREE_namespaceObject.Vector2( 1, 1 );
+		this.size = new three.Vector2( 1, 1 );
 
 		this.frame = new Frame( this.getBackgroundMaterial() );
 
@@ -3343,7 +3215,6 @@ class Block extends mix.withBase( external_THREE_namespaceObject.Object3D )(
 
 }
 
-;// CONCATENATED MODULE: ./src/components/core/InlineComponent.js
 /**
 
 Job: nothing yet, but adding a isInline parameter to an inline component
@@ -3366,104 +3237,6 @@ function InlineComponent( Base ) {
 	};
 }
 
-;// CONCATENATED MODULE: ./node_modules/three/examples/jsm/utils/BufferGeometryUtils.js
-
-
-function computeTangents() {
-
-	throw new Error( 'BufferGeometryUtils: computeTangents renamed to computeMikkTSpaceTangents.' );
-
-}
-
-function computeMikkTSpaceTangents( geometry, MikkTSpace, negateSign = true ) {
-
-	if ( ! MikkTSpace || ! MikkTSpace.isReady ) {
-
-		throw new Error( 'BufferGeometryUtils: Initialized MikkTSpace library required.' );
-
-	}
-
-	if ( ! geometry.hasAttribute( 'position' ) || ! geometry.hasAttribute( 'normal' ) || ! geometry.hasAttribute( 'uv' ) ) {
-
-		throw new Error( 'BufferGeometryUtils: Tangents require "position", "normal", and "uv" attributes.' );
-
-	}
-
-	function getAttributeArray( attribute ) {
-
-		if ( attribute.normalized || attribute.isInterleavedBufferAttribute ) {
-
-			const srcArray = attribute.isInterleavedBufferAttribute ? attribute.data.array : attribute.array;
-			const dstArray = new Float32Array( attribute.getCount() * attribute.itemSize );
-
-			for ( let i = 0, j = 0; i < attribute.getCount(); i ++ ) {
-
-				dstArray[ j ++ ] = MathUtils.denormalize( attribute.getX( i ), srcArray );
-				dstArray[ j ++ ] = MathUtils.denormalize( attribute.getY( i ), srcArray );
-
-				if ( attribute.itemSize > 2 ) {
-
-					dstArray[ j ++ ] = MathUtils.denormalize( attribute.getZ( i ), srcArray );
-
-				}
-
-			}
-
-			return dstArray;
-
-		}
-
-		if ( attribute.array instanceof Float32Array ) {
-
-			return attribute.array;
-
-		}
-
-		return new Float32Array( attribute.array );
-
-	}
-
-	// MikkTSpace algorithm requires non-indexed input.
-
-	const _geometry = geometry.index ? geometry.toNonIndexed() : geometry;
-
-	// Compute vertex tangents.
-
-	const tangents = MikkTSpace.generateTangents(
-
-		getAttributeArray( _geometry.attributes.position ),
-		getAttributeArray( _geometry.attributes.normal ),
-		getAttributeArray( _geometry.attributes.uv )
-
-	);
-
-	// Texture coordinate convention of glTF differs from the apparent
-	// default of the MikkTSpace library; .w component must be flipped.
-
-	if ( negateSign ) {
-
-		for ( let i = 3; i < tangents.length; i += 4 ) {
-
-			tangents[ i ] *= - 1;
-
-		}
-
-	}
-
-	//
-
-	_geometry.setAttribute( 'tangent', new BufferAttribute( tangents, 4 ) );
-
-	if ( geometry !== _geometry ) {
-
-		geometry.copy( _geometry );
-
-	}
-
-	return geometry;
-
-}
-
 /**
  * @param  {Array<BufferGeometry>} geometries
  * @param  {Boolean} useGroups
@@ -3481,7 +3254,7 @@ function mergeBufferGeometries( geometries, useGroups = false ) {
 
 	const morphTargetsRelative = geometries[ 0 ].morphTargetsRelative;
 
-	const mergedGeometry = new external_THREE_namespaceObject.BufferGeometry();
+	const mergedGeometry = new three.BufferGeometry();
 
 	let offset = 0;
 
@@ -3726,848 +3499,16 @@ function mergeBufferAttributes( attributes ) {
 
 	}
 
-	return new external_THREE_namespaceObject.BufferAttribute( array, itemSize, normalized );
+	return new three.BufferAttribute( array, itemSize, normalized );
 
 }
-
-/**
- * @param {Array<BufferAttribute>} attributes
- * @return {Array<InterleavedBufferAttribute>}
- */
-function interleaveAttributes( attributes ) {
-
-	// Interleaves the provided attributes into an InterleavedBuffer and returns
-	// a set of InterleavedBufferAttributes for each attribute
-	let TypedArray;
-	let arrayLength = 0;
-	let stride = 0;
-
-	// calculate the the length and type of the interleavedBuffer
-	for ( let i = 0, l = attributes.length; i < l; ++ i ) {
-
-		const attribute = attributes[ i ];
-
-		if ( TypedArray === undefined ) TypedArray = attribute.array.constructor;
-		if ( TypedArray !== attribute.array.constructor ) {
-
-			console.error( 'AttributeBuffers of different types cannot be interleaved' );
-			return null;
-
-		}
-
-		arrayLength += attribute.array.length;
-		stride += attribute.itemSize;
-
-	}
-
-	// Create the set of buffer attributes
-	const interleavedBuffer = new InterleavedBuffer( new TypedArray( arrayLength ), stride );
-	let offset = 0;
-	const res = [];
-	const getters = [ 'getX', 'getY', 'getZ', 'getW' ];
-	const setters = [ 'setX', 'setY', 'setZ', 'setW' ];
-
-	for ( let j = 0, l = attributes.length; j < l; j ++ ) {
-
-		const attribute = attributes[ j ];
-		const itemSize = attribute.itemSize;
-		const count = attribute.count;
-		const iba = new InterleavedBufferAttribute( interleavedBuffer, itemSize, offset, attribute.normalized );
-		res.push( iba );
-
-		offset += itemSize;
-
-		// Move the data for each attribute into the new interleavedBuffer
-		// at the appropriate offset
-		for ( let c = 0; c < count; c ++ ) {
-
-			for ( let k = 0; k < itemSize; k ++ ) {
-
-				iba[ setters[ k ] ]( c, attribute[ getters[ k ] ]( c ) );
-
-			}
-
-		}
-
-	}
-
-	return res;
-
-}
-
-// returns a new, non-interleaved version of the provided attribute
-function deinterleaveAttribute( attribute ) {
-
-	const cons = attribute.data.array.constructor;
-	const count = attribute.count;
-	const itemSize = attribute.itemSize;
-	const normalized = attribute.normalized;
-
-	const array = new cons( count * itemSize );
-	let newAttribute;
-	if ( attribute.isInstancedInterleavedBufferAttribute ) {
-
-		newAttribute = new InstancedBufferAttribute( array, itemSize, normalized, attribute.meshPerAttribute );
-
-	} else {
-
-		newAttribute = new BufferAttribute( array, itemSize, normalized );
-
-	}
-
-	for ( let i = 0; i < count; i ++ ) {
-
-		newAttribute.setX( i, attribute.getX( i ) );
-
-		if ( itemSize >= 2 ) {
-
-			newAttribute.setY( i, attribute.getY( i ) );
-
-		}
-
-		if ( itemSize >= 3 ) {
-
-			newAttribute.setZ( i, attribute.getZ( i ) );
-
-		}
-
-		if ( itemSize >= 4 ) {
-
-			newAttribute.setW( i, attribute.getW( i ) );
-
-		}
-
-	}
-
-	return newAttribute;
-
-}
-
-// deinterleaves all attributes on the geometry
-function deinterleaveGeometry( geometry ) {
-
-	const attributes = geometry.attributes;
-	const morphTargets = geometry.morphTargets;
-	const attrMap = new Map();
-
-	for ( const key in attributes ) {
-
-		const attr = attributes[ key ];
-		if ( attr.isInterleavedBufferAttribute ) {
-
-			if ( ! attrMap.has( attr ) ) {
-
-				attrMap.set( attr, deinterleaveAttribute( attr ) );
-
-			}
-
-			attributes[ key ] = attrMap.get( attr );
-
-		}
-
-	}
-
-	for ( const key in morphTargets ) {
-
-		const attr = morphTargets[ key ];
-		if ( attr.isInterleavedBufferAttribute ) {
-
-			if ( ! attrMap.has( attr ) ) {
-
-				attrMap.set( attr, deinterleaveAttribute( attr ) );
-
-			}
-
-			morphTargets[ key ] = attrMap.get( attr );
-
-		}
-
-	}
-
-}
-
-/**
- * @param {Array<BufferGeometry>} geometry
- * @return {number}
- */
-function estimateBytesUsed( geometry ) {
-
-	// Return the estimated memory used by this geometry in bytes
-	// Calculate using itemSize, count, and BYTES_PER_ELEMENT to account
-	// for InterleavedBufferAttributes.
-	let mem = 0;
-	for ( const name in geometry.attributes ) {
-
-		const attr = geometry.getAttribute( name );
-		mem += attr.count * attr.itemSize * attr.array.BYTES_PER_ELEMENT;
-
-	}
-
-	const indices = geometry.getIndex();
-	mem += indices ? indices.count * indices.itemSize * indices.array.BYTES_PER_ELEMENT : 0;
-	return mem;
-
-}
-
-/**
- * @param {BufferGeometry} geometry
- * @param {number} tolerance
- * @return {BufferGeometry>}
- */
-function mergeVertices( geometry, tolerance = 1e-4 ) {
-
-	tolerance = Math.max( tolerance, Number.EPSILON );
-
-	// Generate an index buffer if the geometry doesn't have one, or optimize it
-	// if it's already available.
-	const hashToIndex = {};
-	const indices = geometry.getIndex();
-	const positions = geometry.getAttribute( 'position' );
-	const vertexCount = indices ? indices.count : positions.count;
-
-	// next value for triangle indices
-	let nextIndex = 0;
-
-	// attributes and new attribute arrays
-	const attributeNames = Object.keys( geometry.attributes );
-	const attrArrays = {};
-	const morphAttrsArrays = {};
-	const newIndices = [];
-	const getters = [ 'getX', 'getY', 'getZ', 'getW' ];
-
-	// initialize the arrays
-	for ( let i = 0, l = attributeNames.length; i < l; i ++ ) {
-
-		const name = attributeNames[ i ];
-
-		attrArrays[ name ] = [];
-
-		const morphAttr = geometry.morphAttributes[ name ];
-		if ( morphAttr ) {
-
-			morphAttrsArrays[ name ] = new Array( morphAttr.length ).fill().map( () => [] );
-
-		}
-
-	}
-
-	// convert the error tolerance to an amount of decimal places to truncate to
-	const decimalShift = Math.log10( 1 / tolerance );
-	const shiftMultiplier = Math.pow( 10, decimalShift );
-	for ( let i = 0; i < vertexCount; i ++ ) {
-
-		const index = indices ? indices.getX( i ) : i;
-
-		// Generate a hash for the vertex attributes at the current index 'i'
-		let hash = '';
-		for ( let j = 0, l = attributeNames.length; j < l; j ++ ) {
-
-			const name = attributeNames[ j ];
-			const attribute = geometry.getAttribute( name );
-			const itemSize = attribute.itemSize;
-
-			for ( let k = 0; k < itemSize; k ++ ) {
-
-				// double tilde truncates the decimal value
-				hash += `${ ~ ~ ( attribute[ getters[ k ] ]( index ) * shiftMultiplier ) },`;
-
-			}
-
-		}
-
-		// Add another reference to the vertex if it's already
-		// used by another index
-		if ( hash in hashToIndex ) {
-
-			newIndices.push( hashToIndex[ hash ] );
-
-		} else {
-
-			// copy data to the new index in the attribute arrays
-			for ( let j = 0, l = attributeNames.length; j < l; j ++ ) {
-
-				const name = attributeNames[ j ];
-				const attribute = geometry.getAttribute( name );
-				const morphAttr = geometry.morphAttributes[ name ];
-				const itemSize = attribute.itemSize;
-				const newarray = attrArrays[ name ];
-				const newMorphArrays = morphAttrsArrays[ name ];
-
-				for ( let k = 0; k < itemSize; k ++ ) {
-
-					const getterFunc = getters[ k ];
-					newarray.push( attribute[ getterFunc ]( index ) );
-
-					if ( morphAttr ) {
-
-						for ( let m = 0, ml = morphAttr.length; m < ml; m ++ ) {
-
-							newMorphArrays[ m ].push( morphAttr[ m ][ getterFunc ]( index ) );
-
-						}
-
-					}
-
-				}
-
-			}
-
-			hashToIndex[ hash ] = nextIndex;
-			newIndices.push( nextIndex );
-			nextIndex ++;
-
-		}
-
-	}
-
-	// Generate typed arrays from new attribute arrays and update
-	// the attributeBuffers
-	const result = geometry.clone();
-	for ( let i = 0, l = attributeNames.length; i < l; i ++ ) {
-
-		const name = attributeNames[ i ];
-		const oldAttribute = geometry.getAttribute( name );
-
-		const buffer = new oldAttribute.array.constructor( attrArrays[ name ] );
-		const attribute = new BufferAttribute( buffer, oldAttribute.itemSize, oldAttribute.normalized );
-
-		result.setAttribute( name, attribute );
-
-		// Update the attribute arrays
-		if ( name in morphAttrsArrays ) {
-
-			for ( let j = 0; j < morphAttrsArrays[ name ].length; j ++ ) {
-
-				const oldMorphAttribute = geometry.morphAttributes[ name ][ j ];
-
-				const buffer = new oldMorphAttribute.array.constructor( morphAttrsArrays[ name ][ j ] );
-				const morphAttribute = new BufferAttribute( buffer, oldMorphAttribute.itemSize, oldMorphAttribute.normalized );
-				result.morphAttributes[ name ][ j ] = morphAttribute;
-
-			}
-
-		}
-
-	}
-
-	// indices
-
-	result.setIndex( newIndices );
-
-	return result;
-
-}
-
-/**
- * @param {BufferGeometry} geometry
- * @param {number} drawMode
- * @return {BufferGeometry>}
- */
-function toTrianglesDrawMode( geometry, drawMode ) {
-
-	if ( drawMode === TrianglesDrawMode ) {
-
-		console.warn( 'THREE.BufferGeometryUtils.toTrianglesDrawMode(): Geometry already defined as triangles.' );
-		return geometry;
-
-	}
-
-	if ( drawMode === TriangleFanDrawMode || drawMode === TriangleStripDrawMode ) {
-
-		let index = geometry.getIndex();
-
-		// generate index if not present
-
-		if ( index === null ) {
-
-			const indices = [];
-
-			const position = geometry.getAttribute( 'position' );
-
-			if ( position !== undefined ) {
-
-				for ( let i = 0; i < position.count; i ++ ) {
-
-					indices.push( i );
-
-				}
-
-				geometry.setIndex( indices );
-				index = geometry.getIndex();
-
-			} else {
-
-				console.error( 'THREE.BufferGeometryUtils.toTrianglesDrawMode(): Undefined position attribute. Processing not possible.' );
-				return geometry;
-
-			}
-
-		}
-
-		//
-
-		const numberOfTriangles = index.count - 2;
-		const newIndices = [];
-
-		if ( drawMode === TriangleFanDrawMode ) {
-
-			// gl.TRIANGLE_FAN
-
-			for ( let i = 1; i <= numberOfTriangles; i ++ ) {
-
-				newIndices.push( index.getX( 0 ) );
-				newIndices.push( index.getX( i ) );
-				newIndices.push( index.getX( i + 1 ) );
-
-			}
-
-		} else {
-
-			// gl.TRIANGLE_STRIP
-
-			for ( let i = 0; i < numberOfTriangles; i ++ ) {
-
-				if ( i % 2 === 0 ) {
-
-					newIndices.push( index.getX( i ) );
-					newIndices.push( index.getX( i + 1 ) );
-					newIndices.push( index.getX( i + 2 ) );
-
-				} else {
-
-					newIndices.push( index.getX( i + 2 ) );
-					newIndices.push( index.getX( i + 1 ) );
-					newIndices.push( index.getX( i ) );
-
-				}
-
-			}
-
-		}
-
-		if ( ( newIndices.length / 3 ) !== numberOfTriangles ) {
-
-			console.error( 'THREE.BufferGeometryUtils.toTrianglesDrawMode(): Unable to generate correct amount of triangles.' );
-
-		}
-
-		// build final geometry
-
-		const newGeometry = geometry.clone();
-		newGeometry.setIndex( newIndices );
-		newGeometry.clearGroups();
-
-		return newGeometry;
-
-	} else {
-
-		console.error( 'THREE.BufferGeometryUtils.toTrianglesDrawMode(): Unknown draw mode:', drawMode );
-		return geometry;
-
-	}
-
-}
-
-/**
- * Calculates the morphed attributes of a morphed/skinned BufferGeometry.
- * Helpful for Raytracing or Decals.
- * @param {Mesh | Line | Points} object An instance of Mesh, Line or Points.
- * @return {Object} An Object with original position/normal attributes and morphed ones.
- */
-function computeMorphedAttributes( object ) {
-
-	if ( object.geometry.isBufferGeometry !== true ) {
-
-		console.error( 'THREE.BufferGeometryUtils: Geometry is not of type BufferGeometry.' );
-		return null;
-
-	}
-
-	const _vA = new Vector3();
-	const _vB = new Vector3();
-	const _vC = new Vector3();
-
-	const _tempA = new Vector3();
-	const _tempB = new Vector3();
-	const _tempC = new Vector3();
-
-	const _morphA = new Vector3();
-	const _morphB = new Vector3();
-	const _morphC = new Vector3();
-
-	function _calculateMorphedAttributeData(
-		object,
-		attribute,
-		morphAttribute,
-		morphTargetsRelative,
-		a,
-		b,
-		c,
-		modifiedAttributeArray
-	) {
-
-		_vA.fromBufferAttribute( attribute, a );
-		_vB.fromBufferAttribute( attribute, b );
-		_vC.fromBufferAttribute( attribute, c );
-
-		const morphInfluences = object.morphTargetInfluences;
-
-		if ( morphAttribute && morphInfluences ) {
-
-			_morphA.set( 0, 0, 0 );
-			_morphB.set( 0, 0, 0 );
-			_morphC.set( 0, 0, 0 );
-
-			for ( let i = 0, il = morphAttribute.length; i < il; i ++ ) {
-
-				const influence = morphInfluences[ i ];
-				const morph = morphAttribute[ i ];
-
-				if ( influence === 0 ) continue;
-
-				_tempA.fromBufferAttribute( morph, a );
-				_tempB.fromBufferAttribute( morph, b );
-				_tempC.fromBufferAttribute( morph, c );
-
-				if ( morphTargetsRelative ) {
-
-					_morphA.addScaledVector( _tempA, influence );
-					_morphB.addScaledVector( _tempB, influence );
-					_morphC.addScaledVector( _tempC, influence );
-
-				} else {
-
-					_morphA.addScaledVector( _tempA.sub( _vA ), influence );
-					_morphB.addScaledVector( _tempB.sub( _vB ), influence );
-					_morphC.addScaledVector( _tempC.sub( _vC ), influence );
-
-				}
-
-			}
-
-			_vA.add( _morphA );
-			_vB.add( _morphB );
-			_vC.add( _morphC );
-
-		}
-
-		if ( object.isSkinnedMesh ) {
-
-			object.boneTransform( a, _vA );
-			object.boneTransform( b, _vB );
-			object.boneTransform( c, _vC );
-
-		}
-
-		modifiedAttributeArray[ a * 3 + 0 ] = _vA.x;
-		modifiedAttributeArray[ a * 3 + 1 ] = _vA.y;
-		modifiedAttributeArray[ a * 3 + 2 ] = _vA.z;
-		modifiedAttributeArray[ b * 3 + 0 ] = _vB.x;
-		modifiedAttributeArray[ b * 3 + 1 ] = _vB.y;
-		modifiedAttributeArray[ b * 3 + 2 ] = _vB.z;
-		modifiedAttributeArray[ c * 3 + 0 ] = _vC.x;
-		modifiedAttributeArray[ c * 3 + 1 ] = _vC.y;
-		modifiedAttributeArray[ c * 3 + 2 ] = _vC.z;
-
-	}
-
-	const geometry = object.geometry;
-	const material = object.material;
-
-	let a, b, c;
-	const index = geometry.index;
-	const positionAttribute = geometry.attributes.position;
-	const morphPosition = geometry.morphAttributes.position;
-	const morphTargetsRelative = geometry.morphTargetsRelative;
-	const normalAttribute = geometry.attributes.normal;
-	const morphNormal = geometry.morphAttributes.position;
-
-	const groups = geometry.groups;
-	const drawRange = geometry.drawRange;
-	let i, j, il, jl;
-	let group;
-	let start, end;
-
-	const modifiedPosition = new Float32Array( positionAttribute.count * positionAttribute.itemSize );
-	const modifiedNormal = new Float32Array( normalAttribute.count * normalAttribute.itemSize );
-
-	if ( index !== null ) {
-
-		// indexed buffer geometry
-
-		if ( Array.isArray( material ) ) {
-
-			for ( i = 0, il = groups.length; i < il; i ++ ) {
-
-				group = groups[ i ];
-
-				start = Math.max( group.start, drawRange.start );
-				end = Math.min( ( group.start + group.count ), ( drawRange.start + drawRange.count ) );
-
-				for ( j = start, jl = end; j < jl; j += 3 ) {
-
-					a = index.getX( j );
-					b = index.getX( j + 1 );
-					c = index.getX( j + 2 );
-
-					_calculateMorphedAttributeData(
-						object,
-						positionAttribute,
-						morphPosition,
-						morphTargetsRelative,
-						a, b, c,
-						modifiedPosition
-					);
-
-					_calculateMorphedAttributeData(
-						object,
-						normalAttribute,
-						morphNormal,
-						morphTargetsRelative,
-						a, b, c,
-						modifiedNormal
-					);
-
-				}
-
-			}
-
-		} else {
-
-			start = Math.max( 0, drawRange.start );
-			end = Math.min( index.count, ( drawRange.start + drawRange.count ) );
-
-			for ( i = start, il = end; i < il; i += 3 ) {
-
-				a = index.getX( i );
-				b = index.getX( i + 1 );
-				c = index.getX( i + 2 );
-
-				_calculateMorphedAttributeData(
-					object,
-					positionAttribute,
-					morphPosition,
-					morphTargetsRelative,
-					a, b, c,
-					modifiedPosition
-				);
-
-				_calculateMorphedAttributeData(
-					object,
-					normalAttribute,
-					morphNormal,
-					morphTargetsRelative,
-					a, b, c,
-					modifiedNormal
-				);
-
-			}
-
-		}
-
-	} else {
-
-		// non-indexed buffer geometry
-
-		if ( Array.isArray( material ) ) {
-
-			for ( i = 0, il = groups.length; i < il; i ++ ) {
-
-				group = groups[ i ];
-
-				start = Math.max( group.start, drawRange.start );
-				end = Math.min( ( group.start + group.count ), ( drawRange.start + drawRange.count ) );
-
-				for ( j = start, jl = end; j < jl; j += 3 ) {
-
-					a = j;
-					b = j + 1;
-					c = j + 2;
-
-					_calculateMorphedAttributeData(
-						object,
-						positionAttribute,
-						morphPosition,
-						morphTargetsRelative,
-						a, b, c,
-						modifiedPosition
-					);
-
-					_calculateMorphedAttributeData(
-						object,
-						normalAttribute,
-						morphNormal,
-						morphTargetsRelative,
-						a, b, c,
-						modifiedNormal
-					);
-
-				}
-
-			}
-
-		} else {
-
-			start = Math.max( 0, drawRange.start );
-			end = Math.min( positionAttribute.count, ( drawRange.start + drawRange.count ) );
-
-			for ( i = start, il = end; i < il; i += 3 ) {
-
-				a = i;
-				b = i + 1;
-				c = i + 2;
-
-				_calculateMorphedAttributeData(
-					object,
-					positionAttribute,
-					morphPosition,
-					morphTargetsRelative,
-					a, b, c,
-					modifiedPosition
-				);
-
-				_calculateMorphedAttributeData(
-					object,
-					normalAttribute,
-					morphNormal,
-					morphTargetsRelative,
-					a, b, c,
-					modifiedNormal
-				);
-
-			}
-
-		}
-
-	}
-
-	const morphedPositionAttribute = new Float32BufferAttribute( modifiedPosition, 3 );
-	const morphedNormalAttribute = new Float32BufferAttribute( modifiedNormal, 3 );
-
-	return {
-
-		positionAttribute: positionAttribute,
-		normalAttribute: normalAttribute,
-		morphedPositionAttribute: morphedPositionAttribute,
-		morphedNormalAttribute: morphedNormalAttribute
-
-	};
-
-}
-
-function mergeGroups( geometry ) {
-
-	if ( geometry.groups.length === 0 ) {
-
-		console.warn( 'THREE.BufferGeometryUtils.mergeGroups(): No groups are defined. Nothing to merge.' );
-		return geometry;
-
-	}
-
-	let groups = geometry.groups;
-
-	// sort groups by material index
-
-	groups = groups.sort( ( a, b ) => {
-
-		if ( a.materialIndex !== b.materialIndex ) return a.materialIndex - b.materialIndex;
-
-		return a.start - b.start;
-
-	} );
-
-	// create index for non-indexed geometries
-
-	if ( geometry.getIndex() === null ) {
-
-		const positionAttribute = geometry.getAttribute( 'position' );
-		const indices = [];
-
-		for ( let i = 0; i < positionAttribute.count; i += 3 ) {
-
-			indices.push( i, i + 1, i + 2 );
-
-		}
-
-		geometry.setIndex( indices );
-
-	}
-
-	// sort index
-
-	const index = geometry.getIndex();
-
-	const newIndices = [];
-
-	for ( let i = 0; i < groups.length; i ++ ) {
-
-		const group = groups[ i ];
-
-		const groupStart = group.start;
-		const groupLength = groupStart + group.count;
-
-		for ( let j = groupStart; j < groupLength; j ++ ) {
-
-			newIndices.push( index.getX( j ) );
-
-		}
-
-	}
-
-	geometry.dispose(); // Required to force buffer recreation
-	geometry.setIndex( newIndices );
-
-	// update groups indices
-
-	let start = 0;
-
-	for ( let i = 0; i < groups.length; i ++ ) {
-
-		const group = groups[ i ];
-
-		group.start = start;
-		start += group.count;
-
-	}
-
-	// merge groups
-
-	let currentGroup = groups[ 0 ];
-
-	geometry.groups = [ currentGroup ];
-
-	for ( let i = 1; i < groups.length; i ++ ) {
-
-		const group = groups[ i ];
-
-		if ( currentGroup.materialIndex === group.materialIndex ) {
-
-			currentGroup.count += group.count;
-
-		} else {
-
-			currentGroup = group;
-			geometry.groups.push( currentGroup );
-
-		}
-
-	}
-
-	return geometry;
-
-}
-
-
-
-;// CONCATENATED MODULE: ./src/content/MSDFGlyph.js
-
 
 /**
  * Job: create a plane geometry with the right UVs to map the MSDF texture on the wanted glyph.
  *
  * Knows: dimension of the plane to create, specs of the font used, glyph requireed
  */
-class MSDFGlyph extends external_THREE_namespaceObject.PlaneGeometry {
+class MSDFGlyph extends three.PlaneGeometry {
 
 	constructor( inline, font ) {
 
@@ -4675,12 +3616,6 @@ class MSDFGlyph extends external_THREE_namespaceObject.PlaneGeometry {
 
 }
 
-;// CONCATENATED MODULE: ./src/content/MSDFText.js
-
-
-
-
-
 /**
 
 Job:
@@ -4783,7 +3718,7 @@ function buildText() {
 
 	const mergedGeom = mergeBufferGeometries( translatedGeom );
 
-	const mesh = new external_THREE_namespaceObject.Mesh( mergedGeom, this.getFontMaterial() );
+	const mesh = new three.Mesh( mergedGeom, this.getFontMaterial() );
 
 	return mesh;
 
@@ -4791,14 +3726,11 @@ function buildText() {
 
 //
 
-/* harmony default export */ const MSDFText = ({
+var MSDFText = {
 	getGlyphDimensions,
 	getGlyphPairKerning,
 	buildText
-});
-
-;// CONCATENATED MODULE: ./src/components/core/TextManager.js
-
+};
 
 /**
 
@@ -4902,9 +3834,6 @@ function TextManager( Base ) {
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/deepDelete.js
-
-
 /** Recursively erase THE CHILDREN of the passed object */
 function deepDelete( object3D ) {
 
@@ -4926,21 +3855,6 @@ function deepDelete( object3D ) {
 
 }
 
-/* harmony default export */ const utils_deepDelete = (deepDelete);
-
-;// CONCATENATED MODULE: ./src/components/Text.js
-
-
-
-
-
-
-
-
-
-
-
-
 /**
 
 Job:
@@ -4953,7 +3867,7 @@ Knows:
 - Parent block
 
  */
-class Text extends mix.withBase( external_THREE_namespaceObject.Object3D )(
+class Text extends mix.withBase( three.Object3D )(
 	InlineComponent,
 	TextManager,
 	MaterialManager,
@@ -4995,7 +3909,7 @@ class Text extends mix.withBase( external_THREE_namespaceObject.Object3D )(
 	 */
 	updateLayout() {
 
-		utils_deepDelete( this );
+		deepDelete( this );
 
 		if ( this.inlines ) {
 
@@ -5032,7 +3946,7 @@ class Text extends mix.withBase( external_THREE_namespaceObject.Object3D )(
 
 		if ( !font || typeof font === 'string' ) {
 
-			if ( !core_FontLibrary.getFontOf( this ) ) console.warn( 'no font was found' );
+			if ( !FontLibrary.getFontOf( this ) ) console.warn( 'no font was found' );
 			return;
 
 		}
@@ -5132,18 +4046,6 @@ class Text extends mix.withBase( external_THREE_namespaceObject.Object3D )(
 
 }
 
-;// CONCATENATED MODULE: ./src/components/InlineBlock.js
-
-
-
-
-
-
-
-
-
-
-
 /**
  * Job:
  * - computing its own size according to user measurements or content measurement
@@ -5153,7 +4055,7 @@ class Text extends mix.withBase( external_THREE_namespaceObject.Object3D )(
  * - Its measurements parameter
  * - Parent block
  */
-class InlineBlock extends mix.withBase( external_THREE_namespaceObject.Object3D )(
+class InlineBlock extends mix.withBase( three.Object3D )(
 	InlineComponent,
 	BoxComponent,
 	InlineManager,
@@ -5169,7 +4071,7 @@ class InlineBlock extends mix.withBase( external_THREE_namespaceObject.Object3D 
 
 		//
 
-		this.size = new external_THREE_namespaceObject.Vector2( 1, 1 );
+		this.size = new three.Vector2( 1, 1 );
 
 		this.frame = new Frame( this.getBackgroundMaterial() );
 
@@ -5275,7 +4177,6 @@ class InlineBlock extends mix.withBase( external_THREE_namespaceObject.Object3D 
 
 }
 
-;// CONCATENATED MODULE: ./src/utils/Keymaps.js
 /**
 
 Contains key maps for the Keyboard component.
@@ -5283,7 +4184,7 @@ Most languages need a specific keyboard. Therefore, Keyboard takes a language at
 and if not passed tries to detect the language. If not found, it uses the basic QZERTY layout.
 
  */
-/* harmony default export */ const Keymaps = ({
+var keymaps = {
 
 	fr:
 		[
@@ -5999,32 +4900,18 @@ and if not passed tries to detect the language. If not found, it uses the basic 
 			]
 		]
 
-});
-
-;// CONCATENATED MODULE: ./src/components/Keyboard.js
-
-
-
-
-
-
-
-
-
-
-
-
+};
 
 //
 
-const Keyboard_textureLoader = new external_THREE_namespaceObject.TextureLoader();
+const textureLoader = new three.TextureLoader();
 
 //
 
 /**
  * Job: high-level component that returns a keyboard
  */
-class Keyboard extends mix.withBase( external_THREE_namespaceObject.Object3D )( BoxComponent, MeshUIComponent ) {
+class Keyboard extends mix.withBase( three.Object3D )( BoxComponent, MeshUIComponent ) {
 
 	constructor( options ) {
 
@@ -6063,12 +4950,12 @@ class Keyboard extends mix.withBase( external_THREE_namespaceObject.Object3D )( 
 				case 'fr' :
 				case 'fr-CH' :
 				case 'fr-CA' :
-					keymap = Keymaps.fr;
+					keymap = keymaps.fr;
 					break;
 
 				case 'ru' :
 					this.charsetCount = 2;
-					keymap = Keymaps.ru;
+					keymap = keymaps.ru;
 					break;
 
 				case 'de' :
@@ -6076,7 +4963,7 @@ class Keyboard extends mix.withBase( external_THREE_namespaceObject.Object3D )( 
 				case 'de-AT' :
 				case 'de-LI' :
 				case 'de-CH' :
-					keymap = Keymaps.de;
+					keymap = keymaps.de;
 					break;
 
 				case 'es' :
@@ -6092,27 +4979,27 @@ class Keyboard extends mix.withBase( external_THREE_namespaceObject.Object3D )( 
 				case 'es-PE' :
 				case 'es-UY' :
 				case 'es-VE' :
-					keymap = Keymaps.es;
+					keymap = keymaps.es;
 					break;
 
 				case 'el' :
 					this.charsetCount = 2;
-					keymap = Keymaps.el;
+					keymap = keymaps.el;
 					break;
 
 				case 'nord' :
-					keymap = Keymaps.nord;
+					keymap = keymaps.nord;
 					break;
 
 				default :
-					keymap = Keymaps.eng;
+					keymap = keymaps.eng;
 					break;
 
 			}
 
 		} else {
 
-			keymap = Keymaps.eng;
+			keymap = keymaps.eng;
 
 		}
 
@@ -6190,7 +5077,7 @@ class Keyboard extends mix.withBase( external_THREE_namespaceObject.Object3D )( 
 
 						} )();
 
-						Keyboard_textureLoader.load( url, ( texture ) => {
+						textureLoader.load( url, ( texture ) => {
 
 							key.add(
 								new InlineBlock( {
@@ -6346,52 +5233,36 @@ class Keyboard extends mix.withBase( external_THREE_namespaceObject.Object3D )( 
 
 }
 
-;// CONCATENATED MODULE: ./src/three-mesh-ui.js
 /* global global */
-
-
-
-
-
-
-
-
-
-
-
-
 
 const update = () => UpdateManager.update();
 
 const ThreeMeshUI = {
-	Block: Block,
-	Text: Text,
-	InlineBlock: InlineBlock,
-	Keyboard: Keyboard,
-	FontLibrary: core_FontLibrary,
+	Block,
+	Text,
+	InlineBlock,
+	Keyboard,
+	FontLibrary,
 	update,
-	TextAlign: TextAlign_namespaceObject,
-	Whitespace: Whitespace_namespaceObject,
-	JustifyContent: JustifyContent_namespaceObject,
-	AlignItems: AlignItems_namespaceObject,
-	ContentDirection: ContentDirection_namespaceObject
+	TextAlign,
+	Whitespace,
+	JustifyContent,
+	AlignItems,
+	ContentDirection
 };
 
-if ( typeof __webpack_require__.g !== 'undefined' ) __webpack_require__.g.ThreeMeshUI = ThreeMeshUI;
+if ( typeof global !== 'undefined' ) global.ThreeMeshUI = ThreeMeshUI;
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* harmony default export */ const three_mesh_ui = ((/* unused pure expression or super */ null && (ThreeMeshUI)));
-
-/******/ })()
-;
+exports.AlignItems = AlignItems;
+exports.Block = Block;
+exports.ContentDirection = ContentDirection;
+exports.FontLibrary = FontLibrary;
+exports.InlineBlock = InlineBlock;
+exports.JustifyContent = JustifyContent;
+exports.Keyboard = Keyboard;
+exports.Text = Text;
+exports.TextAlign = TextAlign;
+exports.Whitespace = Whitespace;
+exports["default"] = ThreeMeshUI;
+exports.update = update;
+//# sourceMappingURL=three-mesh-ui.cjs.js.map
