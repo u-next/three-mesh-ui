@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:takafumi-ko/three-mesh-ui.git"
+    "url": "git@github.com:u-next/three-mesh-ui.git"
   },
   "keywords": [
     "three.js",
