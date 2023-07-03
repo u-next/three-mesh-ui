@@ -1,6 +1,7 @@
 node_modules/
 webpack.config.js
 webpack.prodConfig.js
+rollup.config.js
 Procfile
 .eslintrc
 dist/

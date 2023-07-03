@@ -1,5 +1,7 @@
 import type {Color, Object3D} from "three";
 
+declare module 'three-mesh-ui';
+
 export type BlockOptions = {
     width: number;
     height: number;
