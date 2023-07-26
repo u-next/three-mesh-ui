@@ -1,69 +1,99 @@
-import type {Color, Object3D} from "three";
+import type { Color, Object3D } from "three";
 
-declare module 'three-mesh-ui';
+declare module "three-mesh-ui";
 
-export type BlockOptions = {
-    width: number;
-    height: number;
-    padding?: number;
-    fontFamily?: string;
-    fontTexture?: string;
-    backgroundColor?: Color;
-    backgroundOpacity?: number;
-    borderRadius?: number | [topLeft: number, topRight: number, bottomRight: number, bottomLeft: number];
-    // @todo add missing properties
-    [property: string]: any;
+interface SetupStateOptions<
+	T extends BlockOptions | TextOptions | InlineBlockOptions
+> {
+	state: string;
+	attributes: Partial<T>;
+	onSet?: () => void;
+}
+interface MeshUIComponent<T> {
+	isUI: true;
+	set(options: Partial<T>): void;
+	setupState(options: SetupStateOptions<T>): void;
+	setState(state: string): void;
 }
 
-export declare class Block extends Object3D {
-    constructor(options: BlockOptions);
+export type BlockOptions = {
+	width: number;
+	height: number;
+	padding?: number;
+	fontFamily?: string;
+	fontTexture?: string;
+	backgroundColor?: Color;
+	backgroundOpacity?: number;
+	borderRadius?:
+		| number
+		| [
+				topLeft: number,
+				topRight: number,
+				bottomRight: number,
+				bottomLeft: number
+		  ];
+	// @todo add missing properties
+	[property: string]: any;
+};
+
+export declare class Block
+	extends Object3D
+	implements MeshUIComponent<BlockOptions>
+{
+	constructor(options: BlockOptions);
 }
 
 export type TextOptions = {
-    // @todo add missing properties
-    [property: string]: any;
-}
+	// @todo add missing properties
+	[property: string]: any;
+};
 
-export declare class Text extends Object3D {
-    constructor(options: TextOptions);
+export declare class Text
+	extends Object3D
+	implements MeshUIComponent<TextOptions>
+{
+	constructor(options: TextOptions);
 }
 
 export type InlineBlockOptions = {
-    // @todo add missing properties
-    [property: string]: any;
-}
+	// @todo add missing properties
+	[property: string]: any;
+};
 
-export declare class InlineBlock extends Object3D {
-    constructor(options: InlineBlockOptions);
+export declare class InlineBlock
+	extends Object3D
+	implements MeshUIComponent<InlineBlockOptions>
+{
+	constructor(options: InlineBlockOptions);
 }
 
 export type KeyboardOptions = {
-    // @todo add missing properties
-    [property: string]: any;
-}
+	// @todo add missing properties
+	[property: string]: any;
+};
 
 export declare class Keyboard extends Object3D {
-    constructor(options: KeyboardOptions);
+	constructor(options: KeyboardOptions);
 }
 
 export declare namespace FontLibrary {
-    export function setFontFamily(): void;
+	export function setFontFamily(): void;
 
-    export function setFontTexture(): void;
+	export function setFontTexture(): void;
 
-    export function getFontOf(): void;
+	export function getFontOf(): void;
 
-    // @todo fix type
-    export function addFont(...args: any[]): any;
+	// @todo fix type
+	export function addFont(...args: any[]): any;
 }
 
 export declare function update(): void;
 
 declare global {
-    namespace JSX {
-        interface IntrinsicElements {
-            block: any
-            text: any
-        }
-    }
+	namespace JSX {
+		interface IntrinsicElements {
+			block: any;
+			text: any;
+		}
+	}
 }
