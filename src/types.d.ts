@@ -20,9 +20,9 @@ class MeshUIComponent<
 }
 
 export type BlockOptions = {
-	offset: number;
 	width: number;
 	height: number;
+	offset?: number;
 	padding?: number;
 	fontFamily?: string;
 	fontTexture?: string;
@@ -43,11 +43,11 @@ export type BlockOptions = {
 export declare class Block extends MeshUIComponent<BlockOptions> {}
 
 export type TextOptions = {
-	offset: number;
-	content: string;
-	fontKerning: "none" | "normal";
-	letterSpacing: number;
-	textAlign:
+	offset?: number;
+	content?: string;
+	fontKerning?: "none" | "normal";
+	letterSpacing?: number;
+	textAlign?:
 		| "left"
 		| "center"
 		| "right"
@@ -55,11 +55,11 @@ export type TextOptions = {
 		| "justify-left"
 		| "justify-center"
 		| "justify-right";
-	whiteSpace: "normal" | "nowrap" | "pre" | "pre-line" | "pre-wrap";
-	breakOn: string;
-	fontColor: Color;
-	fontOpacity: number;
-	fontSuperSampling: boolean;
+	whiteSpace?: "normal" | "nowrap" | "pre" | "pre-line" | "pre-wrap";
+	breakOn?: string;
+	fontColor?: Color;
+	fontOpacity?: number;
+	fontSuperSampling?: boolean;
 
 	// @todo add missing properties
 	[property: string]: any;
@@ -68,7 +68,7 @@ export type TextOptions = {
 export declare class Text extends MeshUIComponent<TextOptions> {}
 
 export type InlineBlockOptions = {
-	offset: number;
+	offset?: number;
 	// @todo add missing properties
 	[property: string]: any;
 };
