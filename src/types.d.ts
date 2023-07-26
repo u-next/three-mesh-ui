@@ -20,6 +20,7 @@ class MeshUIComponent<
 }
 
 export type BlockOptions = {
+	offset: number;
 	width: number;
 	height: number;
 	padding?: number;
@@ -39,20 +40,27 @@ export type BlockOptions = {
 	[property: string]: any;
 };
 
-// implementsには強制力がないので　methodのついかが必要になる
-// NG
-// export declare class Block
-// 	extends Object3D
-// 	implements MeshUIComponent<BlockOptions>
-// {
-// 	constructor(options: BlockOptions); // object3Dのconstructorと違うのでoverrideしてる
-// }
-
-// 素直にMeshUIComponentsをextendするのがよさげ
-
 export declare class Block extends MeshUIComponent<BlockOptions> {}
 
 export type TextOptions = {
+	offset: number;
+	content: string;
+	fontKerning: "none" | "normal";
+	letterSpacing: number;
+	textAlign:
+		| "left"
+		| "center"
+		| "right"
+		| "justify"
+		| "justify-left"
+		| "justify-center"
+		| "justify-right";
+	whiteSpace: "normal" | "nowrap" | "pre" | "pre-line" | "pre-wrap";
+	breakOn: string;
+	fontColor: Color;
+	fontOpacity: number;
+	fontSuperSampling: boolean;
+
 	// @todo add missing properties
 	[property: string]: any;
 };
@@ -60,6 +68,7 @@ export type TextOptions = {
 export declare class Text extends MeshUIComponent<TextOptions> {}
 
 export type InlineBlockOptions = {
+	offset: number;
 	// @todo add missing properties
 	[property: string]: any;
 };
