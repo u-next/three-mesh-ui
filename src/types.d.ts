@@ -9,7 +9,10 @@ interface SetupStateOptions<
 	attributes: Partial<T>;
 	onSet?: () => void;
 }
-interface MeshUIComponent<T> {
+class MeshUIComponent<
+	T extends BlockOptions | TextOptions | InlineBlockOptions
+> extends Object3D {
+	constructor(options: T);
 	isUI: true;
 	set(options: Partial<T>): void;
 	setupState(options: SetupStateOptions<T>): void;
@@ -36,36 +39,32 @@ export type BlockOptions = {
 	[property: string]: any;
 };
 
-export declare class Block
-	extends Object3D
-	implements MeshUIComponent<BlockOptions>
-{
-	constructor(options: BlockOptions);
-}
+// implementsには強制力がないので　methodのついかが必要になる
+// NG
+// export declare class Block
+// 	extends Object3D
+// 	implements MeshUIComponent<BlockOptions>
+// {
+// 	constructor(options: BlockOptions); // object3Dのconstructorと違うのでoverrideしてる
+// }
+
+// 素直にMeshUIComponentsをextendするのがよさげ
+
+export declare class Block extends MeshUIComponent<BlockOptions> {}
 
 export type TextOptions = {
 	// @todo add missing properties
 	[property: string]: any;
 };
 
-export declare class Text
-	extends Object3D
-	implements MeshUIComponent<TextOptions>
-{
-	constructor(options: TextOptions);
-}
+export declare class Text extends MeshUIComponent<TextOptions> {}
 
 export type InlineBlockOptions = {
 	// @todo add missing properties
 	[property: string]: any;
 };
 
-export declare class InlineBlock
-	extends Object3D
-	implements MeshUIComponent<InlineBlockOptions>
-{
-	constructor(options: InlineBlockOptions);
-}
+export declare class InlineBlock extends MeshUIComponent<InlineBlockOptions> {}
 
 export type KeyboardOptions = {
 	// @todo add missing properties
