@@ -2,9 +2,9 @@ import type { Color, Object3D } from "three";
 
 declare module "three-mesh-ui";
 
-declare interface SetupStateOptions<
+export type SetupStateOptions<
 	T extends BlockOptions | TextOptions | InlineBlockOptions
-> {
+> = {
 	state: string;
 	attributes: Partial<T>;
 	onSet?: () => void;
